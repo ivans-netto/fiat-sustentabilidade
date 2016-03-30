@@ -1,0 +1,1757 @@
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Fiat - Sustentabilidade</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- css -->
+		<link rel="stylesheet" href="assets/css/mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+
+		<!-- fav -->
+		<!-- <link rel="icon" 
+		      type="image/png" 
+		      href="assets/images/favicon3-chefbee.png"> -->
+
+		<!-- fucking jquery 1.11.3 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="assets/scripts/vendor/custom-select.js"></script>
+		<script src="assets/scripts/vendor/mCustomScrollbar.concat.min.js"></script>
+
+		<!--[if lt IE 10]>
+			<style>
+				img {
+					background: transparent;
+    				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
+				}
+				.iv-wrap-close-modal {
+					position: absolute;
+					top: 0px; left: 0px;
+					z-index: 1000;
+				}
+				* {
+					transform: translate(0px, 0px) !important;
+				}
+				.iv-to-scroll {
+					overflow-y: scroll !important;
+				}
+				
+			</style>
+
+			<script src="assets/scripts/vendor/ie-fixers/excanvas.min.js"></script>
+			<script src="assets/scripts/vendor/ie-fixers/respond.min.js"></script>
+			<script src="assets/scripts/vendor/ie-fixers/html5shiv.js"></script>
+
+			<script>
+				$('.close-modal-func').click(function(){
+				alert('sdgsdg');
+					$('.iv-component-modal').hide();
+				})
+			</script>
+		<![endif]-->
+
+		<!-- preloader -->
+		<style>
+			#iv-loading{
+				background-color: #4fcca8;
+				height: 100%;
+				width: 100%;
+				position: fixed;
+				z-index: 90000;
+				margin-top: 0px;
+				top: 0px;
+			}
+			#iv-loading-center{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				}
+			#iv-loading-center-absolute {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				height: 200px;
+				width: 200px;
+				margin-top: -100px;
+				margin-left: -100px;	
+
+			}
+			.iv-object{
+			    -moz-border-radius: 50% 50% 50% 50%;
+				-webkit-border-radius: 50% 50% 50% 50%;
+				border-radius: 50% 50% 50% 50%;
+				position: absolute;
+				border-left: 5px solid #FFF;
+				border-right: 5px solid #FFF;
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+				-webkit-animation: iv-animate 2s infinite;
+				animation: iv-animate 2s infinite;	
+				}
+
+			#iv-object_one{
+				left: 75px;
+				top: 75px;
+				width: 50px;
+				height: 50px;
+				}
+										
+			#iv-object_two{
+				left: 65px;
+				top: 65px;
+				width: 70px;
+				height: 70px;
+				-webkit-animation-delay: 0.1s;
+			    animation-delay: 0.1s;
+				}
+					
+			#iv-object_three{
+				left: 55px;
+				top: 55px;
+				width: 90px;
+				height: 90px;
+				-webkit-animation-delay: 0.2s;
+			    animation-delay: 0.2s;
+				}
+			#iv-object_four{
+				left: 45px;
+				top: 45px;
+				width: 110px;
+				height: 110px;
+				-webkit-animation-delay: 0.3s;
+			    animation-delay: 0.3s;
+				
+				}	
+
+			@-webkit-keyframes iv-animate {
+			 
+
+			50% {
+				-ms-transform: rotate(180deg); 
+			   	-webkit-transform: rotate(180deg); 
+			    transform: rotate(180deg); 
+			  }
+				  
+			100% {
+				-ms-transform: rotate(0deg); 
+			   	-webkit-transform: rotate(0deg); 
+			    transform: rotate(0deg); 
+			  }	  
+
+			}
+
+			@keyframes iv-animate {
+
+			50% {
+				-ms-transform: rotate(180deg); 
+			   	-webkit-transform: rotate(180deg); 
+			    transform: rotate(180deg); 
+			  }
+				  
+			100% {
+				-ms-transform: rotate(0deg); 
+			   	-webkit-transform: rotate(0deg); 
+			    transform: rotate(0deg); 
+			  }	  			  
+			}
+		</style>
+
+		<script type="text/javascript">
+		    //<![CDATA[
+		    	
+	        	/**
+	        	*
+	        	* PRELOADER
+	        	*
+	        	**/
+	        	
+		        window.onload = function() {
+		        	application();
+
+		        	/*=======================================
+		        	=            snippet preloar            =
+		        	=======================================*/
+		        	
+		        	$.fn.preload = function() {
+					    this.each(function(){
+					        $('<img/>')[0].src = this;
+					    });
+					}	        	
+		        	/*-----  End of snippet preloar  ------*/	  
+
+					$("#iv-loading").delay(1200).fadeOut(500, function(){
+						animationsAfterLoad();
+
+						// $(['assets/images/full-larice.jpg',
+						// 	'assets/images/full-canapa.jpg',
+						// 	'assets/images/full-galassia.jpg',
+						// 	'assets/images/full-corteccia.jpg',
+						// 	'assets/images/full-argilla.jpg',
+						// 	'assets/images/full-supreme.jpg',
+						// 	'assets/images/full-dune.jpg',
+						// 	'assets/images/full-canaletto.jpg',
+						// 	'assets/images/full-moscato.jpg',
+						// 	'assets/images/full-garza.jpg']).preload();
+					});
+				};
+		    //]]>
+		</script>
+	</head>	
+
+	<body>
+		<div id="iv-loading">
+			<div id="iv-loading-center">
+				<div id="iv-loading-center-absolute">
+					<div class="iv-object" id="iv-object_four"></div>
+					<div class="iv-object" id="iv-object_three"></div>
+					<div class="iv-object" id="iv-object_two"></div>
+					<div class="iv-object" id="iv-object_one"></div>
+				</div>
+			</div>		 
+		</div>
+
+		<div id="hi-iam-a-buddle"></div>
+
+		<div class="app-container" id="app-container">
+			<!-- MODAL STRUCTURE -->
+			<section class="iv-component-modal" id="iv-component-modal">
+				<div class="iv-wrap-modal">
+					<div class="iv-modal iv-materiais-verdes" id="iv-modal">
+						<!-- close btn -->
+						<div class="iv-wrap-close-modal close-modal-func" id="iv-close-btn-modal">
+							<div class="iv-close-btn">
+								<div class="iv-full-w iv-full-h">
+									<!-- <div class="iv-middle"> -->
+										<img src="assets/images/modal/close-btn-modal-white.png" alt="botão fechar" class="iv-center-block iv-img-responsive" style="display: none">
+										<span class="left"></span>
+										<span class="right"></span>
+									<!-- </div> -->
+								</div>
+							</div>
+						</div>
+
+						<!-- content modal -->
+						<div class="iv-wrap-content-modal">
+							<div class="iv-wrap">
+								<div class="iv-to-scroll">
+									<!-- INTERNAS PRODUTO -->
+										<!-- materiais verdes -->
+										<div class="materiais-verdes iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													Utilização de <br>
+													materiais verdes
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Para diminuir o impacto ambiental dos veículos, procuramos sempre usar materiais que interfiram o mínimo possível nos processos naturais que a FIAT está inserida. Chamamos eles de materiais verdes. <br>
+
+												Eis alguns exemplos de como temos avançado nesta questão:</p>
+											</article>
+
+											<!-- list -->
+											<ol>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-fibras.png" alt="fibras" class="iv-img-responsive">
+													</span>
+													<span class="text">Pesquisas voltadas para o emprego das fibras vegetais como reforço mecânico nos materiais poliméricos.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-reciclagem.png" alt="reciclagem" class="iv-img-responsive">
+													</span>
+													<span class="text">Desenvolvimento de processos de reciclagem para produção de componentes de alto desempenho.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-banco.png" alt="banco" class="iv-img-responsive">
+													</span>
+													<span class="text">Uso de óleo de soja na produção de espuma dos bancos.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-acabamento.png" alt="acabamento" class="iv-img-responsive">
+													</span>
+													<span class="text">Uso de fibras vegetais como reforço em componentes de acabamento.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-materiais-reciclados.png" alt="materiais reciclados" class="iv-img-responsive">
+													</span>
+													<span class="text">Uso de materiais reciclados nos isolamentos acústicos, nas proteções do vão de roda e nos reparos aerodinâmicos.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-carro-eco.png" alt="carro eco" class="iv-img-responsive">
+													</span>
+													<span class="text">Veículos projetados e fabricados de modo a facilitar o desmonte e a reciclagem.</span>
+												</li>
+
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-evolucao-processos.png" alt="evolucao processos" class="iv-img-responsive">
+													</span>
+													<span class="text">Evolução dos processos para a eliminação dos metais pesados dos materiais, o que acabou por abolir o chumbo, cádmio, cromo VI e mercúrio de materiais metálicos, poliméricos, adesivos, tintas e revestimentos anticorrosivos.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-analise-material-reciclado.png" alt="analise material reciclado" class="iv-img-responsive">
+													</span>
+													<span class="text">Análise se todo material fornecido para a FIAT por um sistema informatizado, que integra todos os polos produtivos da empresa no mundo.</span>
+												</li>
+											</ol>
+										</div>
+										<!-- eficiencia energetica -->
+										<div class="eficiencia-energetica iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													eficiência <br>
+													energética
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>A eficiência energética está associada ao quanto de energia um carro precisa para se deslocar. Para medir isso, usamos a distância percorrida para cada litro de combustível, ou seja, veículos que consomem menos combustível são mais eficientes e emitem menos CO2.</p>
+
+												<p>Outos fatores também influenciam e ampliam a eficiência energética:</p>
+											</article>
+
+											<!-- list -->
+											<ol>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-aerodinamica.png" alt="aerodinamica" class="iv-img-responsive">
+													</span>
+													<span class="text">Aerodinâmica</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-pneu.png" alt="pneu" class="iv-img-responsive">
+													</span>
+													<span class="text">Pneus com melhor resistência ao rolamento</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-verde-folha.png" alt="folha verde" class="iv-img-responsive">
+													</span>
+													<span class="text">Emprego de materiais verdes mais leves</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-cambio.png" alt="cambio" class="iv-img-responsive">
+													</span>
+													<span class="text">Câmbio com relações longas de marcha</span>
+												</li>
+											</ol>
+
+											<!-- content bellow -->
+											<article>
+												<p>A FIAT dedica-se para aprimorar estas e outras formas de queimar cada vez menos CO2. Você também pode fazer a sua parte aumentando a eficiência energética do seu veículo e economizando na gasolina:</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Não aqueça o motor com o veículo parado. Sempre que possível, utilize marchas mais alta.</li>
+												<li>Evite acelerações quando estiver parado em semáforos.</li>
+												<li>Não aqueça o motor com o veículo parado. 
+												<li>Mantenha uma velocidade uniforme sempre que possível, evitando freadas e arranques supérfluos.</li>
+												<li>Desligue o motor em paradas prolongadas.</li>
+												<li>Controle periodicamente a pressão dos pneus.</li>
+												<li>Utilize dispositivos elétricos somente pelo tempo necessário.</li>
+												<li>Evite trajetos muito curtos com partidas frequentes com o motor frio.</li>
+												<li>Não viaje com excesso de carga.</li>
+												<li>Não altere as características originais do veículo.</li>
+											</ul>
+										</div>
+										<!-- marcos de inovação -->
+										<div class="marcos-de-inovacao iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													marcos de <br>
+													inovação fiat
+												</h5>
+											</header>
+
+											<!-- subtitle -->
+											<h6>UNO ECOLOGY</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>O Uno Ecology é uma versão sustentável do Uno. Nele foram testadas diversas técnicas e soluções de mobilidade com materiais alternativos, reutilizáveis e não poluente que agora são estudadas para serem aplicadas nos futuros modelos da FIAT. Conheça algumas destas aplicações:</p>
+											</article>
+
+											<!-- list -->
+											<ol>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-etanol.png" alt="etanol" class="iv-img-responsive">
+													</span>
+													<span class="text">Motor desenvolvido para consumir 100% etanol, que é um combustível renovável e com emissão 0% de CO2.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-sistema-start-stop.png" alt="start stop" class="iv-img-responsive">
+													</span>
+													<span class="text">Sistema start-stop, que desliga automaticamente o motor quando o carro para no semáforo, e é capaz de gerar uma economia em torno de 5% em trânsito urbano.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-monitoramento-pneu.png" alt="Sistema de monitoramento" class="iv-img-responsive">
+													</span>
+													<span class="text">Sistema de monitoramento que informa ao motorista se a pressão do pneu está abaixo do especificado.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-pecas-plasticas.png" alt="Peças plásticas" class="iv-img-responsive">
+													</span>
+													<span class="text">Peças plásticas de acabamento interno e externo do veículo, como para-choques, painel, painéis de porta e revestimentos externos, foram produzidas a partir do bagaço de cana-de-açúcar.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-fibra-de-coco.png" alt="fibra de coco" class="iv-img-responsive">
+													</span>
+													<span class="text">Estofamento dos bancos feito de fibra de coco e latex.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-garrafas-pet.png" alt="Utilização de garrafas PET" class="iv-img-responsive">
+													</span>
+													<span class="text">Utilização de garrafas PET recicladas no tecido dos bancos e tapetes.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-teto-solar.png" alt="Teto solar fotovoltaico" class="iv-img-responsive">
+													</span>
+													<span class="text">Teto solar fotovoltaico, que ajuda a carregar a bateria.</span>
+												</li>
+											</ol>
+
+											<!-- subtitle -->
+											<h6>Palio Weekend Elétrico</h6>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-img-inovacao.png" alt="inovação fiat" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>Desde 1973, quando a FIAT desenvolveu o primeiro veículo de passeio em série com motor a etanol, ela não para de inovar.</p>
+												<p>Desde 1973, quando a FIAT desenvolveu o primeiro veículo de passeio em série com motor a etanol, ela não para de inovar.</p>
+												<p>A principal característica do modelo é sua alimentação: baterias de sódio que garantem autonomia de 120 quilômetros com carga completa, recarregada a cada 8 horas. É equipado com um motor que gera potência máxima de 15 Kw (20 cv) e torque máximo de 50 Nm (5,1 kgm), que faz de 0 a 60 km/h em nove segundos e leva o veículo à velocidade máxima de 100 km/h.</p>
+												<p>Já foram produzidos 66 Unidades do Palio Weekend Elétrico, e os protótipos ajudam nas pesquisas e treinamentos para a busca de novas inovações sustentáveis.</p>
+											</article>
+										</div>
+
+									<!-- INTERNAS MEIO AMBIENTE -->
+										<!-- iso eficiencia energetica -->
+										<div class="iso-eficiencia-energetica iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													ISO 50001<br>
+													Eficiência energética
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-eficiencia-energetica.png" alt="Eficiência energética" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>A FIAT foi a primeira fábrica de automóveis do país a conquistar a ISO 50001, criado para contribuir com o uso eficiente de fontes energéticas</p>
+												<p>A FIAT foi a primeira fábrica de automóveis do país a conquistar a ISO 50001.</p>
+												<p>Criado para contribuir com o uso eficiente de fontes energéticas, a certificação fez com que a FIAT diminuísse seu consumo de energia de tal modo que, o que foi economizado poderia abastecer 610  residências por mês!</p>
+												<p>Além disso, instalamos placas solares para produção de energia interna.</p>
+											</article>
+										</div>
+										<!-- atero zero -->
+										<div class="aterro-zero iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													aterro zero
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-img-aterro-zero.png" alt="atero zero" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>A FIAT foi a primeira fábrica do setor automotivo do país a destinar 100% dos resíduos que gera para reciclagem e reutilização.</p>
+												<p>Para que a meta de enviar zero lixo para aterros sanitários seja alcançada, todos os empregados estão diretamente envolvidos com os 5 R’s: Recuse, reduza, Reutilize, Recicle e Recupere.</p>
+												<p>Para que a meta de enviar zero lixo para aterros sanitários seja alcançada, todos os empregados estão diretamente envolvidos com os 5 R’s: Recuse, reduza, Reutilize, Recicle e Recupere.</p>
+											</article>
+										</div>
+										<!-- recirculo de água -->
+										<div class="recirculo-de-agua iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													RECÍRCULO <br>
+													DE ÁGUA
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-img-recirculo-de-agua.png" alt="recirculo de água" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>A FIAT recircula 99% da água que utiliza nos processos produtivos. Na prática, isso significa que quase não captamos água potável da rede pública para uso industrial, economizando o suficiente para abastecer uma cidade de 30 mil habitantes!</p>
+											</article>
+										</div>
+										<!-- iso gestão ambiental -->
+										<div class="iso-gestao-ambiental iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													ISO 14001 <br>
+													GESTÃO AMBIENTAL
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>A FIAT foi a primeira fábrica de automóveis de passeio do país a conquistar a ISO 14001. A certificação é internacionalmente reconhecida e atesta a eficácia do Sistema de Gestão Ambiental.</p>
+												<p>Com a aplicação do SGA, registramos queda contínua dos indicadores de geração de resíduo, consumo de água e de energia por veículo produzido.</p>
+												<p>O grande investimento que a FIAT tem feito na busca por redução de impacto – que já chega a 40 milhões de reais – foi responsável pela criação do Complexo Ecológico, que abriga:</p>
+											</article>
+
+											<!-- list -->
+											<ol>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-complexo-tratamento-agua.png" alt="Complexo de Tratamento de Água" class="iv-img-responsive">
+													</span>
+													<span class="text">Complexo de Tratamento de Água, que permite reúso de 99% da  água.</span>
+												</li>
+												<li>
+													<span class="icon">
+														<img src="assets/images/modal/icon-ilha-de-reciclagem.png" alt="Ilha Ecológica" class="iv-img-responsive">
+													</span>
+													<span class="text">A Ilha Ecológica, que recebe os resíduos gerados na fábrica para identificação, triagem e gestão, com foco na destinação e tratamento adequado</span>
+												</li>
+											</ol>
+										</div>
+
+									<!-- INTERNAS SOCIEDADE -->
+										<!-- cidades sustentaveis -->
+										<div class="cidades-sustentaveis iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													CIDADES <br>
+													SUSTENTÁVEIS
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-cidades-sustentaveis.png" alt="cidades sustentaveis" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>Por cidades mais justas e sustentáveis, a FIAT apoia iniciativas que estimulem a participação cidadã em políticas públicas.</p>
+												<p>Em 2010, a ação do projeto foi decisiva para a criação do Movimento Nossa Betim, que reuniu cidadãos, empresas, entidades empresariais, organizações e entidades da sociedade civil e instituições de ensino e pesquisa, para construir e comprometer a sociedade e os governos no desenvolvimento do município.</p>
+												<p>O movimento ajudou a avaliar aspectos sociais, econômicos, ambientais e culturais da cidade, e promoveu cursos de qualificação para a população. </p>
+											</article>
+										</div>
+										<!-- vacilancia -->
+										<div class="vacilancia iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													vacilandia
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-img-valcilancia.png" alt="vacilandia" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>O aplicativo reforça uma importante crença da FIAT: uma rua melhor é responsabilidade de todos. Da necessidade de criar consciência sobre o assunto de forma divertida, nasceu a Vacilândia. No jogo, o desafio é  tentar controlar o tráfego sem deixar ninguém nervoso, mantendo o respeito e a segurança nas ruas.</p>
+											</article>
+										</div>
+										<!-- casa fiat de cultura -->
+										<div class="casa-fiat-cultura iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													CASA FIAT <br>
+													DE CULTURA
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-casa-fiat-de-cultura.png" alt="casa fiat de cultur" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>A instituição, mantida pelas empresas do Grupo Fiat, é considerada um dos mais importantes espaços para discussão e exposição das artes no Brasil. Além de grandes mostras inéditas, reunindo acervos dos mais importantes museus e coleções do Brasil e do mundo, a instituição realiza programa de palestras, sessões de cinema e atividades educativas, e se destaca por oferecer experiências qualificadas e enriquecedoras para todos os públicos. Com esta iniciativa, a FIAT visa a valorização do patrimônio, a circulação dos bens culturais e a difusão das culturas brasileira e mundial.</p>
+											</article>
+										</div>
+										<!-- arvore da vida -->
+										<div class="arvore-da-vida iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													ÁRVORE DA VIDA
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-img-arvore-da-vida.png" alt="arvore da vida" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>Para construir oportunidades e transformações para estas comunidades, criamos o Árvore da Vida. O programa valoriza a vida, a autonomia e a perenidade para construir laços, e se divide em três programas.</p>
+											</article>
+
+											<!-- subtitle -->
+											<h6>JARDIM TERESÓPOLIS</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Localizado em Jardim Teresópolis, próximo à fábrica de Betim (MG), o Árvore da Vida da região realiza ações voltadas para o desenvolvitmento local, com projetos para crianças, jovens e adultos. Oferece atividades socioeducativas, fomenta geração de emprego e promove fortalecimento da comunidade.</p>
+												<p>Com resultados impressionantes desde sua implantação em 2004, o projeto foi eleito em 2012 uma das 50 melhores práticas brasileiras que contribuem com os Objetivos do Milênio no Prêmio ODM Brasil de “estabelecer parceria mundial para o desenvolvimento“</p>
+											</article>
+
+											<!-- subtitle -->
+											<h6>CAPACITAÇÃO</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>O programa oferece formação técnica na área automotiva para jovens de 18 a 24 anos em situação de vulnerabilidade social, e está presente em 7 estados brasileiros.</p>
+												<p>Desde 2006, a iniciativa já capacitou mais de 600 jovens, e tem o índice de empregabilidade de 87%. Incentivos como cesta básica, uniformes, transporte e alimentação são oferecidos a todos os participantes.</p>
+											</article>
+
+
+											<!-- subtitle -->
+											<h6>PARCEIRIAS</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>O Projeto busca parceiros para contribuir com o crescimento justo e sustentável junto à FIAT. Para isso, apoiamos e patrocinamos diversos projetos que promovem diversão, lazer, cultura e esporte.</p>
+												<p>São contemplados projetos que tem o foco na inclusão e desenvolvimento de crianças e adolescentes, além de comunidades, famílias e escolas.</p>
+											</article>
+										</div>
+										<!-- fiat fun -->
+										<div class="fiat-fun iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													fiat fun
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-fiat-fun.png" alt="fiat fun" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate et eaque tempora magnam deserunt doloremque sit at impedit doloribus eligendi delectus commodi repudiandae perferendis eos ipsam similique illum iste dolores, accusantium debitis earum fuga eveniet eius! Libero veritatis nesciunt dicta.</p>
+											</article>
+
+											<!-- subtitle -->
+											<h6>subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+											</article>
+										</div>
+										<!-- mobilidade urbana -->
+										<div class="mobilidade-urbana iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													mobilidade urbana
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-mobilidade-urbana.png" alt="mobilidade urbana" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate et eaque tempora magnam deserunt doloremque sit at impedit doloribus eligendi delectus commodi repudiandae perferendis eos ipsam similique illum iste dolores, accusantium debitis earum fuga eveniet eius! Libero veritatis nesciunt dicta.</p>
+											</article>
+
+											<!-- subtitle -->
+											<h6>subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+											</article>
+										</div>
+
+									<!-- INTERNAS CONCESSIONÁRIAS -->
+										<!-- governança -->
+										<div class="governanca iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													governança
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-governanca.png" alt="governança" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate et eaque tempora magnam deserunt doloremque sit at impedit doloribus eligendi delectus commodi repudiandae perferendis eos ipsam similique illum iste dolores, accusantium debitis earum fuga eveniet eius! Libero veritatis nesciunt dicta.</p>
+											</article>
+
+											<!-- subtitle -->
+											<h6>subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+											</article>
+										</div>
+										<!-- boas práticas -->
+										<div class="boas-praticas iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													boas práticas
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-boas-praticas.png" alt="boas práticas" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate et eaque tempora magnam deserunt doloremque sit at impedit doloribus eligendi delectus commodi repudiandae perferendis eos ipsam similique illum iste dolores, accusantium debitis earum fuga eveniet eius! Libero veritatis nesciunt dicta.</p>
+											</article>
+
+											<!-- subtitle -->
+											<h6>subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+											</article>
+										</div>
+										<!-- premio -->
+										<div class="premio iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													prêmio
+												</h5>
+											</header>
+
+											<!-- main img -->
+											<img src="assets/images/modal/main-premio.png" alt="prêmio" class="iv-main-img">
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate et eaque tempora magnam deserunt doloremque sit at impedit doloribus eligendi delectus commodi repudiandae perferendis eos ipsam similique illum iste dolores, accusantium debitis earum fuga eveniet eius! Libero veritatis nesciunt dicta.</p>
+											</article>
+
+											<!-- subtitle -->
+											<h6>subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquid, voluptas impedit laborum animi. Ab aut ut sequi non, perspiciatis repellat, labore. Delectus repellendus consectetur magni dolorum a modi, aut!</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste soluta nihil cum porro tempora at quos expedita odit iusto dolorum.</p>
+											</article>
+										</div>
+
+									<!-- INTERNAS PUBLICO INTERNO -->
+										<!-- saude e segurança -->
+										<div class="saude-seguranca iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													SAÚDE <br>
+													E SEGURAnçA
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Para os empregados da FIAT e seus familiares é oferecido um dos melhores sistemas de saúde corporativo do Brasil. Além disso, também são oferecidas assistências médica e hospitalar através de uma rede própria da FIAT, que inclui 5 postos médicos e 3 núcleos de Saúde e Bem Estar. No dia-a-dia, os funcionários e seus familiares tem contato com iniciativas de promoção de saúde e revenção:</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>MelhorAr, de combate ao tabagismo.</li>
+												<li>Nutrição e Saúde, onde podem contar com uma equipe de médicos e nutricionistas no combate ao sobrepeso e obesidade.</li>
+												<li>Bate Coração, de identificação e combate a alterações no sistema cardiovascular.</li>
+												<li>Bate Coração, de identificação e combate a alterações no sistema cardiovascular.</li>
+												<li>Imunização, que oferece vacinas aos empregados e dependentes.</li>
+												<li>Planejamento Familiar, de abordagem sobre métodos contraceptivos.</li>
+												<li>RespirAr, destinado a crianças portadoras de asma e bronquite.</li>
+												<li>Prosa, que funciona como um programa de saúde para adolescentes receberem orientação e discutirem temas como sexualidade, crescimento, drogas, projetos de vida e cidadania</li>
+											</ul>
+										</div>
+										<!-- bem estar e qualidade -->
+										<div class="bem-estar-qualidade iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													BEM ESTAR E <br>
+													QUALIDADE DE VIDA
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>A FIAT promove iniciativas para potencializar o bem-estar e a qualidade de vida de seus funcionários:</p>
+												<p>Vida e Carreira: Tem como objetivo fomentar reflexões sobre decisões e oportunidades de carreira. O programa coloca em discussão a vida profissional e pessoal a fim de conscientizar sobre a importância de planejar o futuro. As atividades falam sobre empreendedorismo, networking, conexão emocional e diversos outros temas, visando abrir possibilidades.</p>
+												<p>Lado a Lado: Visa contribuir com o gerenciamento de problemas relacionados ao ambiente familiar e corporativo que afetam o equilíbrio emocional e a produtividade do empregado.</p>
+												<p>Auxílio-Creche: Auxílio creditado diretamente na conta bancária da favorecida a fim de proporcionar tranquilidade para profissionais com filhos de até 36 meses.</p>
+											</article>
+										</div>
+										<!-- esporte e lazer -->
+										<div class="esporte-e-lazer iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													ESPORTE E LAZER
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Por meio da Fundação FIAT, temos duas grandes formas de promover o esporte e lazer dos funcionários:</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Comemoração das principais datas do ano, além de festas criadas para os empregados. Aproveitamos ocasiões como o Dia do Trabalho, Dia das Crianças, Natal e muitas outras, para reunirmos funcionários e suas famílias em produções feitas especialmente para eles.</li>
+												<li>O FIAT Clube é o maior clube corporativo da América Latina. São 230 mil metros quadrados com quadras poliesportivas, pista de atletismo, piscina, salão de jogos, ginásio e muito mais, feitos para receber os funcionários e suas famílias.</li>
+											</ul>
+										</div>
+										<!-- esporte e lazer -->
+										<div class="educacao-e-cultura iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													EDUCAçÃO <br>
+													E CULTURA
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>A Maratona Cultural tem como objetivo fomentar a busca do saber e desenvolver práticas educacionais complementares.</p>
+												<p>No inicio do ano, a FIAT também oferece um kit escolar composto por diversos materiais escolares para filhos de funcionários matriculados do 1º ao 9º ano letivo.</p>
+												<p>O Prêmio FIAT Educação premia filhos de empregados que tiveram o melhor desempenho escolar ao longo da vida acadêmica. Ao todo, já foram distribuídos mais de 6 milhões de reais a quase 2 mil estudantes.</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Comemoração das principais datas do ano, além de festas criadas para os empregados. Aproveitamos ocasiões como o Dia do Trabalho, Dia das Crianças, Natal e muitas outras, para reunirmos funcionários e suas famílias em produções feitas especialmente para eles.</li>
+												<li>O FIAT Clube é o maior clube corporativo da América Latina. São 230 mil metros quadrados com quadras poliesportivas, pista de atletismo, piscina, salão de jogos, ginásio e muito mais, feitos para receber os funcionários e suas famílias.</li>
+											</ul>
+										</div>
+
+									<!-- INTERNAS FABRICA -->
+										<!-- point 1 -->
+										<div class="point-1 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 1
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ea possimus iusto aliquam at error obcaecati consequatur, recusandae ratione repellat minima, beatae aliquid mollitia architecto officia sed, cupiditate dolorum? Laboriosam voluptate accusantium vero quo quasi natus, deserunt eaque itaque odit ab debitis totam ratione tempora officiis facilis laborum eos dicta veritatis, sed. Vel.</p>
+											</article>
+										</div>
+										<!-- point 2 -->
+										<div class="point-2 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 2
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consectetur possimus deserunt? Consectetur facere nemo rem consequatur, asperiores ipsum eligendi illum, itaque iure aliquam, numquam libero. Numquam voluptas fugiat consequatur laudantium libero ipsam molestiae esse rerum accusamus dolor, provident earum veritatis, nihil, tempore ex necessitatibus aspernatur animi? Dolorem obcaecati esse, illum aut eaque.</p>
+											</article>
+										</div>
+										<!-- point 3 -->
+										<div class="point-3 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 3
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem reprehenderit eos, sapiente sint amet architecto, labore ipsam possimus numquam, ipsum quod qui aliquam, iure minima doloribus adipisci repellendus error beatae eius ipsa ab nam! Accusantium porro quisquam quia, reprehenderit recusandae excepturi, sequi asperiores reiciendis vel numquam facilis, necessitatibus unde vitae consequatur cupiditate? Amet.</p>
+											</article>
+										</div>
+										<!-- point 4 -->
+										<div class="point-4 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 4
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptatibus est unde repellat dolores cupiditate, voluptates laborum, odit expedita beatae aspernatur quos, ad nostrum. Sed dignissimos quaerat odio, necessitatibus nam voluptate, repellendus corporis, neque repellat eligendi culpa quis iusto at saepe ipsam, voluptates enim dolorum labore! Voluptates nesciunt quibusdam qui, placeat architecto delectus.</p>
+											</article>
+										</div>
+										<!-- point 5 -->
+										<div class="point-5 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 5
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut iusto ipsum debitis, dolores. Consequatur quisquam culpa obcaecati sequi fuga excepturi enim, blanditiis! Repellat expedita magnam vero accusantium sunt odit, mollitia rerum alias harum doloribus dolorum, voluptas exercitationem maxime sit quod minima excepturi quos ipsum dolores saepe! Dolor explicabo nesciunt odio molestias praesentium necessitatibus!</p>
+											</article>
+										</div>
+										<!-- point 6 -->
+										<div class="point-6 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 6
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, suscipit odio sunt, laudantium nisi nam magnam totam consectetur quaerat tenetur molestias dignissimos voluptates possimus veniam. Totam commodi recusandae magni minus? Nisi eaque dolorum officia laborum voluptatum, non commodi possimus repudiandae necessitatibus vitae voluptatibus labore pariatur molestiae modi omnis accusantium. Omnis accusamus laudantium doloribus!</p>
+											</article>
+										</div>
+										<!-- point 7 -->
+										<div class="point-7 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 7
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nobis, ut reiciendis voluptatibus praesentium, vel! Iusto, nostrum quidem non deserunt harum asperiores consequatur earum perferendis vel atque ullam voluptates dicta dolore fugit dolorem ea, laudantium odit esse quisquam deleniti quos magni, labore quasi commodi? Nam pariatur qui impedit, deserunt excepturi perspiciatis, soluta hic!</p>
+											</article>
+										</div>
+										<!-- point 8 -->
+										<div class="point-8 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 8
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam maiores cum, quos rerum quisquam, nesciunt consequuntur labore iste repellendus velit expedita eligendi, assumenda voluptate, itaque eius fugit adipisci possimus! Provident perspiciatis optio iure quisquam modi laudantium explicabo consectetur commodi, eaque odio magni omnis fuga aliquid, ad. Ullam explicabo, sapiente eaque maiores minima, quae.</p>
+											</article>
+										</div>
+										<!-- point 9 -->
+										<div class="point-9 iv-show-hide">
+											<!-- title -->
+											<header>
+												<h5>
+													point 9
+												</h5>
+											</header>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam modi at, dolorum voluptatibus animi soluta rerum ex aliquam error temporibus alias nulla magni, rem laudantium dolor sunt, porro quo vitae distinctio, nihil dignissimos corporis. Debitis commodi quae quis, dicta a!</p>
+											</article>
+
+											<!-- undefined list -->
+											<ul>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem suscipit error reiciendis!</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta iusto minus, reiciendis sint.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab nihil, expedita consectetur?</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deserunt, sed distinctio voluptates.</li>
+												<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint voluptatibus veritatis, delectus.</li>
+											</ul>
+
+											<!-- subtitle -->
+											<h6>Subtitle</h6>
+
+											<!-- content bellow -->
+											<article>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit distinctio quo cupiditate doloremque at impedit deleniti, quia architecto, nihil ducimus quam ex. Harum fugit suscipit laboriosam quis dolore magni cupiditate. Maxime voluptatem voluptas consectetur consequuntur, ipsa distinctio necessitatibus natus magnam est vel, saepe exercitationem suscipit. Nihil ea quis quibusdam veniam voluptates eos et!</p>
+											</article>
+										</div>
+
+								</div>
+							</div>
+							<div class="pespective-partial"></div>
+							<div class="pespective-partial"></div>
+							<div class="pespective-partial"></div>
+							<div class="pespective-partial last"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- blur -->
+			<div class="iv-force-be-with-us" id="iv-force-be-with-us">
+				<!-- HEADER -->
+				<header class="iv-menu iv-default-menu">
+					<div class="wrap-navigation">
+						<div class="iv-container iv-full-h iv-overflow">
+							<div class="iv-row iv-full-h">
+								<div class="wrapper-nav iv-displaytable iv-full-h iv-full-w">
+									<div class="iv-col-md-3 iv-full-h iv-full-w iv-wrapper-title">
+										<div class="iv-displaytable iv-full-h iv-full-w">
+											<div class="iv-middle iv-full-w">
+												<h2 class="title">sustentabilidade</h2>
+											</div>
+										</div>
+									</div>
+									<nav class="iv-col-md-9 iv-full-h iv-navigation">
+										<div class="iv-displaytable iv-full-h iv-wrapper-navigation">
+											<div class="iv-middle iv-full-w">
+												<ul class="iv-full-w">
+													<li class="first">
+														<a href="#produto">produto</a>
+													</li>
+													<li>
+														<a href="#ambiente">ambiente</a>
+													</li>
+													<li>
+														<a href="#sociedade">sociedade</a>
+													</li>
+													<li>
+														<a href="#publico-interno">público interno</a>
+													</li>
+													<li>
+														<a href="#concessionarias">
+															concessionárias
+														</a>
+													</li>
+													<li>
+														<a href="#relatorios">relatórios</a>
+													</li>
+													<li>perguntas e respostas</li>
+												</ul>
+											</div>
+										</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<!-- FIXED HEADER -->
+				<!-- <header class="iv-menu iv-hidden-fixed-menu">
+					<div class="wrap-navigation">
+						<div class="iv-container iv-full-h iv-overflow">
+							<div class="iv-row iv-full-h">
+								<div class="wrapper-nav iv-displaytable iv-full-h iv-full-w">
+									<div class="iv-col-md-3 iv-full-h iv-full-w iv-wrapper-title">
+										<div class="iv-displaytable iv-full-h iv-full-w">
+											<div class="iv-middle iv-full-w">
+												<h2 class="title">sustentabilidade</h2>
+											</div>
+										</div>
+									</div>
+									<nav class="iv-col-md-9 iv-full-h iv-navigation">
+										<div class="iv-displaytable iv-full-h iv-wrapper-navigation">
+											<div class="iv-middle iv-full-w">
+												<ul class="iv-full-w">
+													<li class="first">
+														<a href="#produto">produto</a>
+													</li>
+													<li>
+														<a href="#ambiente">ambiente</a>
+													</li>
+													<li>
+														<a href="#sociedade">sociedade</a>
+													</li>
+													<li>
+														<a href="#publico-interno">público interno</a>
+													</li>
+													<li>
+														<a href="#concessionarias">
+															concessionárias
+														</a>
+													</li>
+													<li>
+														<a href="#relatorios">relatórios</a>
+													</li>
+													<li>perguntas e respostas</li>
+												</ul>
+											</div>
+										</div>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+ -->
+				<!-- WELCOME -->
+				<section class="iv-welcome">
+					<div class="iv-wrapper-bg">
+						<img src="assets/images/main-img-sustentabilidade.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full" id="iv-main-img">
+						<img src="assets/images/main-img-sustentabilidade-1600.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full-1600" id="iv-main-img">
+						<img src="assets/images/main-img-sustentabilidade-1150.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full-1150" id="iv-main-img">
+						<img src="assets/images/main-img-sustentabilidade-930.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full-930" id="iv-main-img">
+						<img src="assets/images/main-img-sustentabilidade-670.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full-670" id="iv-main-img">
+						<img src="assets/images/main-img-sustentabilidade-540.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full-540" id="iv-main-img">
+						<img src="assets/images/main-img-sustentabilidade-450.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full-450" id="iv-main-img">
+						<img src="assets/images/main-img-sustentabilidade-407.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full-407" id="iv-main-img">
+						<img src="assets/images/main-img-sustentabilidade-370.jpg" alt="Sustentabilidade -Fiat" class="iv-main-img full-370" id="iv-main-img">
+					</div>
+
+					<header class="iv-content" id="iv-content-welcome">
+						<div class="iv-container">
+							<div class="wrapper-zig">
+								<img src="assets/images/white-zig.png" alt="Detalhe Fiat">
+							</div>
+
+							<h3 class="title-welcome" id="title-welcome">sustentabilidade</h3>
+							<p class="call">Na FIAT, sustentabilidade é coisa séria. Nós sabemos que o futuro da nossa empresa e do nosso planeta dependem 
+							do que fazemos agora para um meio-ambiente e uma sociedade equilibrada. Por isso, ao longo dos anos, desenvolvemos um série de programas para cuidar das gerações futuras, promovendo toda uma agenda em cima 
+							dos conceitos de sustentabilidade. Vem com a gente conhecer estes projetos!
+							</p>
+
+							<a href="#fabrica" class="iv-link-welcome">
+								<button class="iv-btn-sustent btn-welcome" id="btn-welcome" style="color: #4ecaa8">								
+										vamos lá								
+								</button>
+							</a>
+						</div>
+					</header>
+				</section>
+
+				<!-- FACTORY -->
+				<section class="iv-factory">
+					<p class="iv-call">A FIAT não se cansa de procurar fornecedores, sistemas e materias que tornem seus carros mais ecológicamente corretos. Clique no + para ver o conteúdo</p>
+
+					<div class="iv-wrapper-zig">
+						<img src="assets/images/zig-factory.png" alt="Fábrica FIAT">
+					</div>
+
+					<div class="iv-wrap-factory" id="fabrica">
+						<img src="assets/images/factory/factory.jpg" alt="fábrica FIAT" class="iv-img-factory max">
+						<img src="assets/images/factory/factory.min.jpg" alt="fábrica FIAT" class="iv-img-factory min">
+
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-1 open-modal" data-modal="iv-point-1">
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-2 open-modal" data-modal="iv-point-2">
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-3 open-modal" data-modal="iv-point-3">
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-4 open-modal" data-modal="iv-point-4">
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-5 open-modal" data-modal="iv-point-5">
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-6 open-modal" data-modal="iv-point-6">
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-7 open-modal" data-modal="iv-point-7">
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-8 open-modal" data-modal="iv-point-8">
+						<img src="assets/images/factory/point.png" alt="local fábrica fiat" class="iv-point iv-iv-point-9 open-modal" data-modal="iv-point-9">
+					</div>
+
+				</section>
+
+				<!-- PRODUCT -->
+				<section class="iv-products" id="produto">
+					<!-- CALL PRODUTO -->
+					<div class="iv-component-call">
+						<h3>produto</h3>
+						<p>A FIAT não se cansa de procurar fornecedores, sistemas e materias que tornem seus carros mais ecológicamente corretos. Clique no + para ver o conteúdo</p>
+						<div class="iv-wrapper-zig">
+							<img src="assets/images/zig-factory.png" 
+								 alt="detalhe fiat">
+						</div>
+					</div>
+					<div class="iv-hack-padding-title"></div>
+
+					<!-- EFICIÊNCIA ENERGÉTICA -->
+					<div class="iv-component-call">
+						<h4 class="purple">eficiência energética</h4>
+						<p class="purple">A FIAT foi a primeira fábrica do setor automotivo do país a destinar 100% dos resíduos que gera para reciclagem e reutilização.</p>
+						<button class="iv-btn-call purple open-modal" data-modal="iv-eficiencia-energetica">saiba mais</button>
+					</div>
+					<div class="iv-hack-padding-products">
+						<div class="iv-wrapper">
+							<img src="assets/images/img-bottom-eficiencia.png" 
+								 alt="eficiência energética" 
+								 class="eficiencia-energetica tilt-effect">
+						</div>
+					</div>
+
+					<!-- MATERIAIS VERDES -->
+					<div class="iv-component-call">
+						<h4 class="green">materiais verdes</h4>
+						<p class="green">A certificação é internacionalmente reconhecida e atesta a eficácia do Sistema de Gestão Ambiental</p>
+						<button class="iv-btn-call green open-modal" data-modal="iv-materiais-verdes">saiba mais</button>
+					</div>
+					<div class="iv-hack-padding-products">
+						<div class="iv-wrapper">
+							<img src="assets/images/img-bottom-materiais-verdes.png" alt="eficiência energética" class="materiais-verdes">
+						</div>
+					</div>
+
+					<!-- CARROS CONCEITO -->
+					<div class="iv-component-call">
+						<h4 class="orange">carros conceito</h4>
+						<p class="orange">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+						<button class="iv-btn-call orange open-modal" data-modal="iv-marcos-de-inovacao">saiba mais</button>
+					</div>
+					<div class="iv-hack-padding-products">
+						<div class="iv-wrapper">
+							<img src="assets/images/img-bottom-carros-conceito.png" alt="eficiência energética" class="carros-conceito">
+						</div>
+					</div>
+				</section>
+
+				<!-- ENVIRONMENT -->
+				<section class="iv-environment" id="ambiente">
+					<!-- CALL PRODUTO -->
+					<div class="iv-component-call">
+						<h3>ambiente</h3>
+						<p>Além de aplicar o Sistema de Gestão Ambiental e de Energia, a FIAT também coloca em prática seus princípios baseados em sua Política Ambiental e Energética, que abrangem ações como proteção ambiental, conscientização de empregados e fornecedores e busca contínua para diminuir seus impactos no meio ambiente.</p>
+						<div class="iv-wrapper-zig">
+							<img src="assets/images/zig-factory.png" alt="detalhe fiat">
+						</div>
+					</div>
+					<div class="iv-hack-padding-title"></div>
+
+					<!-- ISO 14001 -->
+					<div class="iv-component-call">
+						<h4 class="green">ISO 14001. GESTÃO AMBIENTAL</h4>
+						<p class="green">A certificação é internacionalmente reconhecida e atesta a eficácia do Sistema de Gestão Ambiental.</p>
+						<button class="iv-btn-call green open-modal" data-modal="iv-gestao-ambiental">saiba mais</button>
+					</div>
+					<div class="iv-hack-padding-products">
+						<div class="iv-wrapper">
+							<img src="assets/images/img-bottom-gestao-ambiental.png" alt="gestao ambiental" class="gestao-ambiental">
+						</div>
+					</div>
+
+					<!-- RECÍRCULO DE ÁGUA -->
+					<div class="iv-component-call">
+						<h4 class="light-blue">RECÍRCULO DE ÁGUA</h4>
+						<p class="light-blue">A FIAT recircula 99% da água que utiliza<br>nos processos produtivos.</p>
+						<button class="iv-btn-call light-blue open-modal" data-modal="iv-recirculo-de-agua">saiba mais</button>
+					</div>
+					<div class="iv-hack-padding-products">
+						<div class="iv-wrapper">
+							<img src="assets/images/img-bottom-recirculo-agua.png" alt="recirculo de agua" class="recirculo-agua">
+						</div>
+					</div>
+
+					<!-- ATERRO ZERO -->
+					<div class="iv-component-call">
+						<h4 class="purple">ATERRO ZERO</h4>
+						<p class="purple">A FIAT foi a primeira fábrica do setor automotivo do país a destinar 100% dos resíduos que gera para reciclagem e reutilização.</p>
+						<button class="iv-btn-call purple open-modal" data-modal="iv-aterro-zero">saiba mais</button>
+					</div>
+					<div class="iv-hack-padding-products">
+						<div class="iv-wrapper">
+							<img src="assets/images/img-bottom-atero-zero.png" alt="atero zero" class="atero-zero">
+						</div>
+					</div>
+
+					<!-- ATERRO ZERO -->
+					<div class="iv-component-call">
+						<h4 class="orange">ISO 50001 - EFICIÊNCIA ENERGÉTICA</h4>
+						<p class="orange">A FIAT foi a primeira fábrica de automóveis do país a conquistar a ISO 50001, criado para contribuir com o uso eficiente de fontes energéticas.</p>
+						<button class="iv-btn-call orange open-modal" data-modal="iv-iso-eficiencia-energetica">saiba mais</button>
+					</div>
+				</section>
+
+				<!-- SOCIETY -->
+				<section class="iv-society" id="sociedade">
+					<!-- CALL SOCIETY -->
+					<div class="iv-component-call">
+						<h3 class="iv-society">sociedade</h3>
+						<p class="iv-society">Para a FIAT, as comunidades presentes nos locais onde estão as fábricas são parte essencial de onde estão inseridos, e também precisam de atenção</p>
+						<div class="iv-wrapper-zig">
+							<img src="assets/images/white-zig.png" alt="detalhe fiat">
+						</div>
+					</div>
+
+					<div class="iv-container">
+						<div class="iv-line">
+							<header class="iv-item open-modal" data-modal="iv-mobilidade-urbana">
+								<img src="assets/images/icon-mobilidade-urbana.png" alt="mobilidade urbana" class="iv-img-responsive">
+
+								<h4>mobilidade<br>
+								urbana</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-arvore-da-vida">
+								<img src="assets/images/icon-arvore-da-vida.png" alt="árvore da vida" class="iv-img-responsive">
+
+								<h4>árvore<br>
+								da vida</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-casa-fiat-cultura">
+								<img src="assets/images/icon-casa-fiat-cultura.png" alt="casa fiat cultura" class="iv-img-responsive">
+
+								<h4>casa fiat<br>
+								cultura</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-vacilancia">
+								<img src="assets/images/icon-vacilao-nao.png" alt="vacilão não" class="iv-img-responsive">
+
+								<h4>vacilão,<br>não!</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-cidades-sustentaveis">
+								<img src="assets/images/icon-cidades-sustentaveis.png" alt="cidades sustentáveis" class="iv-img-responsive">
+
+								<h4>cidades<br>
+								sustentáveis</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-fiat-fun">
+								<img src="assets/images/icon-fiat-fun.png" alt="fiat fun" class="iv-img-responsive">
+
+								<h4>fiat<br>
+								fun</h4>
+							</header>
+						</div>
+					</div>
+				</section>
+
+				<!-- WORKFORCE FIAT -->
+				<section class="iv-workforce" id="publico-interno">
+					<!-- CALL SOCIETY -->
+					<div class="iv-component-call">
+						<h3 class="iv-society">público interno</h3>
+						<p class="iv-society">Nada na FIAT acontece sem pessoas. Por isso, a qualidade de vida, segurança, desenvolvimento profissional e acesso à educação, cultura, esporte e lazer dos nossos funcionários são uma prioridade. Também visamos trazer a sustentabilidade para o dia-a-dia com um diálogo aberto com os funcionários, criando um ambiente de colaboração.</p>
+						<div class="iv-wrapper-zig">
+							<img src="assets/images/white-zig.png" alt="detalhe fiat">
+						</div>
+					</div>
+
+					<div class="iv-container">
+						<div class="iv-line">
+							<header class="iv-item open-modal" data-modal="iv-educacao-e-cultura">
+								<img src="assets/images/icon-educacao-e-cultura.png" alt="educacao e cultura" class="iv-img-responsive iv-center-block">
+
+								<h4>educação<br>
+								e cultura</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-esporte-e-lazer">
+								<img src="assets/images/icon-esporte-e-lazer.png" alt="esporte e lazer" class="iv-img-responsive iv-center-block">
+
+								<h4>esporte<br>
+								e lazer</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-saude-seguranca">
+								<img src="assets/images/icon-saude-e-seguranca.png" alt="saude e segurança" class="iv-img-responsive iv-center-block">
+
+								<h4>saúde e<br>
+								segurança</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-bem-estar-qualidade">
+								<img src="assets/images/icon-bem-estar-e-qualidade.png" alt="bem estar e qualidade" class="iv-img-responsive iv-center-block">
+
+								<h4>bem-estar<br>
+								 e qualidade</h4>
+							</header>
+						</div>
+					</div>
+				</section>
+
+				<!-- DEALERS FIAT -->
+				<section class="iv-dealers" id="concessionarias">
+					<!-- CALL SOCIETY -->
+					<div class="iv-component-call">
+						<h3 class="iv-dealers">Concessionárias</h3>
+						<p class="iv-dealers">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+						<div class="iv-wrapper-zig">
+							<img src="assets/images/zig-purple.png" alt="detalhe fiat">
+						</div>
+					</div>
+
+					<div class="iv-container">
+						<div class="iv-line">
+							<header class="iv-item open-modal" data-modal="iv-governanca">
+								<img src="assets/images/icon-governanca.png" alt="governança fiat" class="iv-img-responsive iv-center-block">
+
+								<h4>governança</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-boas-praticas">
+								<img src="assets/images/icon-boas-praticas.png" alt="boas praticas fiat" class="iv-img-responsive iv-center-block">
+
+								<h4>boas praticas</h4>
+							</header>
+							<header class="iv-item open-modal" data-modal="iv-premio">
+								<img src="assets/images/icon-premio.png" alt="premio fiat" class="iv-img-responsive iv-center-block">
+
+								<h4>prêmio</h4>
+							</header>
+						</div>
+					</div>
+				</section>
+
+				<!-- REPORT FIAT -->
+				<section class="iv-report" id="relatorios">
+					<div class="iv-container">
+						<div class="iv-row">
+							<div class="iv-col-md-6">
+								<!-- CALL REPORT -->
+								<div class="iv-component-call">
+									<h4 class="purple iv-report">RELATÓRIOS E PUBLICAÇÕES FIAT</h4>
+									<p class="iv-dealers iv-report">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+								</div>
+							</div>
+
+							<div class="iv-col-md-6">
+								<form>
+									<!-- to validate when there's a selected value, first option value prop must be undefined {; -->
+									<select class="mySelectBoxClass">
+										<option value="SELECIONE">SELECIONE</option>
+										<option value="Lorem ipsum.">option</option>
+										<option value="Lorem ipsum.">option</option>
+										<option value="Lorem ipsum.">option</option>
+										<option value="Lorem ipsum.">option</option>
+										<option value="Lorem ipsum.">option</option>
+										<option value="Lorem ipsum.">option</option>
+									</select>
+
+									<button class="iv-btn-sustent iv-download-btn" id="btn-welcome">
+										baixar arquivo
+									</button>
+								</form>						
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- main scripts -->
+		<!-- must be the last script file to be loaded -->
+		<script src="assets/scripts/main.js"></script>	
+
+		<!--[if lt IE 10]>
+
+			<script>
+				$('.close-modal-func').click(function(){
+					$('.iv-component-modal').hide();
+
+					$('.iv-wrap-close-modal').removeClass('open');
+
+					$('.iv-wrap-modal').removeClass('closiiiiing');
+
+					$("#iv-component-modal").removeClass('iv-opened');
+
+					$('.pespective-partial, .iv-to-scroll').removeClass('open');
+
+					$("body").removeClass('opened-modal');
+
+              $("#iv-force-be-with-us").removeClass('blur');
+				})
+
+
+				$('.open-modal').click(function(){
+
+					var dataModal = $(this).attr('data-modal');
+					var setContentModal = $('#iv-modal');
+
+					setContentModal.attr('class', '');
+					setContentModal.attr('class', 'iv-modal');
+					setContentModal.addClass(dataModal);
+
+
+					$('.iv-component-modal').show();
+				})
+			</script>
+		<![endif]-->
+
+		<!--[if lt IE 10]>
+			<style>
+				img {
+					background: transparent;
+    				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */
+				}
+				.iv-wrap-close-modal {
+					position: absolute;
+					top: 0px; left: 0px;
+					z-index: 1000;
+				}
+				* {
+					transform: translate(0px, 0px) !important;
+					opacity: 1 !important;
+					-ms-pacity: 1 !important;
+				}
+
+				.iv-modal .iv-wrap {
+					background: #fff;
+				}
+
+				.iv-to-scroll {
+					overflow-y: scroll !important;
+				}
+
+
+
+				.iv-modal.iv-materiais-verdes .iv-wrap {
+					background: #1fb69f !important;
+				}
+				.iv-modal.iv-eficiencia-energetica .iv-wrap {
+					background: #926be2 !important;
+				}
+				.iv-modal.iv-marcos-de-inovacao .iv-wrap {
+					background: #e0775c !important;
+				}
+
+				.iv-modal.iv-iso-eficiencia-energetica .iv-wrap {
+					background: #e0775c !important;
+				}
+
+				.iv-modal.iv-aterro-zero .iv-wrap {
+					background: #8861d5 !important;
+				}
+				.iv-modal.iv-recirculo-de-agua .iv-wrap {
+					background: #57a9c1 !important;
+				}
+				.iv-modal.iv-gestao-ambiental .iv-wrap {
+					background: #79bf61 !important;
+				}
+
+				.iv-modal.iv-cidades-sustentaveis .iv-wrap, .iv-modal.iv-fiat-fun .iv-wrap, .iv-modal.iv-mobilidade-urbana .iv-wrap, .iv-modal.iv-vacilancia .iv-wrap, .iv-modal.iv-casa-fiat-cultura .iv-wrap, .iv-modal.iv-arvore-da-vida .iv-wrap  {
+					background: #fff !important;
+				}
+
+				.iv-modal.iv-governanca .iv-wrap, .iv-modal.iv-boas-praticas .iv-wrap, .iv-modal.iv-premio .iv-wrap {
+					background: #fff !important;
+				}
+
+				.iv-modal.iv-saude-seguranca .iv-wrap, .iv-modal.iv-bem-estar-qualidade .iv-wrap, .iv-modal.iv-esporte-e-lazer .iv-wrap, .iv-modal.iv-educacao-e-cultura .wrap {
+					background: #fff !important;
+				}
+
+				.iv-point-1 .iv-wrap, .iv-point-2 .iv-wrap, .iv-point-3 .iv-wrap, .iv-point-4 .iv-wrap, .iv-point-5 .iv-wrap, .iv-point-6 .iv-wrap, .iv-point-7 .iv-wrap, .iv-point-8 .iv-wrap, .iv-point-9 .iv-wrap, .iv-point-10 .iv-wrap  {
+					background: #E7698F !important;
+				}
+
+				@media (min-width: 1330px) {
+					.iv-menu .wrap-navigation {
+						height: 86px !important;
+					}
+					.iv-menu .container, .iv-menu .iv-row, .iv-menu .wrapper-nav {
+						height: 86px !important;
+					}
+					.iv-navigation {
+						height: 86px !important;
+					}
+					.iv-menu .iv-full-h {
+						height: 86px !important;
+					}
+					.wrapper-nav {
+						height: 86px !important;
+					}	
+				}
+
+
+
+			</style> 
+			<script>
+				$('.iv-btn-call').click(function(){
+					setTimeout(function(){
+						$('.iv-to-scroll').css('max-height', ($(window).height() - 100));	
+
+						$('.iv-to-scroll').removeClass('mCustomScrollbar');
+
+					}, 500);	
+				})
+
+				$(window).resize(function(){
+					$('.iv-to-scroll').css('max-height', ($(window).height() - 100));
+				});
+
+				
+			</script>
+		<![endif]-->
+	</body>
+</html>
+
+
+

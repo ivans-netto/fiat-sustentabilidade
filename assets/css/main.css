@@ -1,0 +1,3616 @@
+/*****************************************
+*                                        *
+* Author Name: Ivan Netto                *
+* Phone: +55 51 9661-9973                *
+* E-mail: isandernetto@gmail.com         *
+* Twitter: @ivans_netto                  *
+* Github: https://github.com/ivans-netto *
+*										 *
+*****************************************/
+/*=============================================
+=    Lets start with some instructions of:    =
+=============================================*/
+/*===============================
+=            IMPORTS            =
+===============================*/
+/**
+*
+* RESET
+*
+**/
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus {
+  outline-color: 0;
+  outline-style: none;
+  outline-width: 0;
+}
+::selection {
+  background-color: #0099cc;
+  color: #FFF;
+}
+::-moz-selection {
+  background-color: #0099cc;
+  color: #FFF;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: middle;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: none;
+  outline: none;
+}
+button {
+  background: none;
+  border: none;
+  overflow: visible;
+  outline: none;
+  padding: 0;
+}
+button:focus {
+  outline: none;
+}
+body {
+  line-height: 1;
+}
+/**
+*
+* IMAGES PATH
+*
+**/
+/**
+*
+* VARIABLES
+*
+**/
+/**
+*
+* VARIABLES
+*
+**/
+/**
+*
+* VARIABLES
+*
+**/
+/**
+*
+* MIXINS
+*
+**/
+/*==================================================
+=            transitions AND transforms            =
+==================================================*/
+/**
+	
+	Some instrutions:
+	- Single props: A ~ prefix to escape the resulting expression (i.e. stop LESS from enclosing it in a string): 
+		-> Usage example: 
+		   .transition(~"width 0.32s ease 0.8s");
+
+	- Multiple props: Without ~ prefix. 
+		-> Usage example:
+		   .transition(transform 0.4s cubic-bezier(.11,.69,.25,1.22) 0.3s, opacity 0.4s ease 0.3s); 
+
+**/
+/*-----  End of transitions AND transforms  ------*/
+/**
+*
+* GRID SYSTEM
+*
+**/
+/**
+*
+* GRID SYSTEM
+*
+**/
+.app-container {
+  /*=================================
+	=            CONTAINER            =
+	=================================*/
+  /*===========================
+	=            ROW            =
+	===========================*/
+  /*============================
+	=            COLS            =
+	============================*/
+}
+.app-container .iv-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .app-container .iv-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .app-container .iv-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .app-container .iv-container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1330px) {
+  .app-container .iv-container {
+    width: 1300px;
+  }
+}
+@media (min-width: 1430px) {
+  .app-container .iv-container {
+    width: 1400px;
+  }
+}
+@media (min-width: 1600px) {
+  .app-container .iv-container {
+    width: 1400px;
+  }
+}
+.app-container .iv-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.app-container .iv-col-xs-1,
+.app-container .iv-col-sm-1,
+.app-container .iv-col-md-1,
+.app-container .iv-col-lg-1,
+.app-container .iv-col-xs-2,
+.app-container .iv-col-sm-2,
+.app-container .iv-col-md-2,
+.app-container .iv-col-lg-2,
+.app-container .iv-col-xs-3,
+.app-container .iv-col-sm-3,
+.app-container .iv-col-md-3,
+.app-container .iv-col-lg-3,
+.app-container .iv-col-xs-4,
+.app-container .iv-col-sm-4,
+.app-container .iv-col-md-4,
+.app-container .iv-col-lg-4,
+.app-container .iv-col-xs-5,
+.app-container .iv-col-sm-5,
+.app-container .iv-col-md-5,
+.app-container .iv-col-lg-5,
+.app-container .iv-col-xs-6,
+.app-container .iv-col-sm-6,
+.app-container .iv-col-md-6,
+.app-container .iv-col-lg-6,
+.app-container .iv-col-xs-7,
+.app-container .iv-col-sm-7,
+.app-container .iv-col-md-7,
+.app-container .iv-col-lg-7,
+.app-container .iv-col-xs-8,
+.app-container .iv-col-sm-8,
+.app-container .iv-col-md-8,
+.app-container .iv-col-lg-8,
+.app-container .iv-col-xs-9,
+.app-container .iv-col-sm-9,
+.app-container .iv-col-md-9,
+.app-container .iv-col-lg-9,
+.app-container .iv-col-xs-10,
+.app-container .iv-col-sm-10,
+.app-container .iv-col-md-10,
+.app-container .iv-col-lg-10,
+.app-container .iv-col-xs-11,
+.app-container .iv-col-sm-11,
+.app-container .iv-col-md-11,
+.app-container .iv-col-lg-11,
+.app-container .iv-col-xs-12,
+.app-container .iv-col-sm-12,
+.app-container .iv-col-md-12,
+.app-container .iv-col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.app-container .iv-col-xs-1,
+.app-container .iv-col-xs-2,
+.app-container .iv-col-xs-3,
+.app-container .iv-col-xs-4,
+.app-container .iv-col-xs-5,
+.app-container .iv-col-xs-6,
+.app-container .iv-col-xs-7,
+.app-container .iv-col-xs-8,
+.app-container .iv-col-xs-9,
+.app-container .iv-col-xs-10,
+.app-container .iv-col-xs-11,
+.app-container .iv-col-xs-12 {
+  float: left;
+}
+.app-container .iv-col-xs-12 {
+  width: 100%;
+}
+.app-container .iv-col-xs-11 {
+  width: 91.66666667%;
+}
+.app-container .iv-col-xs-10 {
+  width: 83.33333333%;
+}
+.app-container .iv-col-xs-9 {
+  width: 75%;
+}
+.app-container .iv-col-xs-8 {
+  width: 66.66666667%;
+}
+.app-container .iv-col-xs-7 {
+  width: 58.33333333%;
+}
+.app-container .iv-col-xs-6 {
+  width: 50%;
+}
+.app-container .iv-col-xs-5 {
+  width: 41.66666667%;
+}
+.app-container .iv-col-xs-4 {
+  width: 33.33333333%;
+}
+.app-container .iv-col-xs-3 {
+  width: 25%;
+}
+.app-container .iv-col-xs-2 {
+  width: 16.66666667%;
+}
+.app-container .iv-col-xs-1 {
+  width: 8.33333333%;
+}
+.app-container .iv-col-xs-pull-12 {
+  right: 100%;
+}
+@media (min-width: 768px) {
+  .app-container .iv-col-sm-1,
+  .app-container .iv-col-sm-2,
+  .app-container .iv-col-sm-3,
+  .app-container .iv-col-sm-4,
+  .app-container .iv-col-sm-5,
+  .app-container .iv-col-sm-6,
+  .app-container .iv-col-sm-7,
+  .app-container .iv-col-sm-8,
+  .app-container .iv-col-sm-9,
+  .app-container .iv-col-sm-10,
+  .app-container .iv-col-sm-11,
+  .app-container .iv-col-sm-12 {
+    float: left;
+  }
+  .app-container .iv-col-sm-12 {
+    width: 100%;
+  }
+  .app-container .iv-col-sm-11 {
+    width: 91.66666667%;
+  }
+  .app-container .iv-col-sm-10 {
+    width: 83.33333333%;
+  }
+  .app-container .iv-col-sm-9 {
+    width: 75%;
+  }
+  .app-container .iv-col-sm-8 {
+    width: 66.66666667%;
+  }
+  .app-container .iv-col-sm-7 {
+    width: 58.33333333%;
+  }
+  .app-container .iv-col-sm-6 {
+    width: 50%;
+  }
+  .app-container .iv-col-sm-5 {
+    width: 41.66666667%;
+  }
+  .app-container .iv-col-sm-4 {
+    width: 33.33333333%;
+  }
+  .app-container .iv-col-sm-3 {
+    width: 25%;
+  }
+  .app-container .iv-col-sm-2 {
+    width: 16.66666667%;
+  }
+  .app-container .iv-col-sm-1 {
+    width: 8.33333333%;
+  }
+  .app-container .iv-col-sm-pull-12 {
+    right: 100%;
+  }
+  .app-container .iv-col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .app-container .iv-col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .app-container .iv-col-sm-pull-9 {
+    right: 75%;
+  }
+  .app-container .iv-col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .app-container .iv-col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .app-container .iv-col-sm-pull-6 {
+    right: 50%;
+  }
+  .app-container .iv-col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .app-container .iv-col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .app-container .iv-col-sm-pull-3 {
+    right: 25%;
+  }
+  .app-container .iv-col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .app-container .iv-col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .app-container .iv-col-sm-pull-0 {
+    right: auto;
+  }
+  .app-container .iv-col-sm-push-12 {
+    left: 100%;
+  }
+  .app-container .iv-col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .app-container .iv-col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .app-container .iv-col-sm-push-9 {
+    left: 75%;
+  }
+  .app-container .iv-col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .app-container .iv-col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .app-container .iv-col-sm-push-6 {
+    left: 50%;
+  }
+  .app-container .iv-col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .app-container .iv-col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .app-container .iv-col-sm-push-3 {
+    left: 25%;
+  }
+  .app-container .iv-col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .app-container .iv-col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .app-container .iv-col-sm-push-0 {
+    left: auto;
+  }
+  .app-container .iv-col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .app-container .iv-col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .app-container .iv-col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .app-container .iv-col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .app-container .iv-col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .app-container .iv-col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .app-container .iv-col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .app-container .iv-col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .app-container .iv-col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .app-container .iv-col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .app-container .iv-col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .app-container .iv-col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .app-container .iv-col-sm-offset-0 {
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .app-container .iv-col-md-1,
+  .app-container .iv-col-md-2,
+  .app-container .iv-col-md-3,
+  .app-container .iv-col-md-4,
+  .app-container .iv-col-md-5,
+  .app-container .iv-col-md-6,
+  .app-container .iv-col-md-7,
+  .app-container .iv-col-md-8,
+  .app-container .iv-col-md-9,
+  .app-container .iv-col-md-10,
+  .app-container .iv-col-md-11,
+  .app-container .iv-col-md-12 {
+    float: left;
+  }
+  .app-container .iv-col-md-12 {
+    width: 100%;
+  }
+  .app-container .iv-col-md-11 {
+    width: 91.66666667%;
+  }
+  .app-container .iv-col-md-10 {
+    width: 83.33333333%;
+  }
+  .app-container .iv-col-md-9 {
+    width: 75%;
+  }
+  .app-container .iv-col-md-8 {
+    width: 66.66666667%;
+  }
+  .app-container .iv-col-md-7 {
+    width: 58.33333333%;
+  }
+  .app-container .iv-col-md-6 {
+    width: 50%;
+  }
+  .app-container .iv-col-md-5 {
+    width: 41.66666667%;
+  }
+  .app-container .iv-col-md-4 {
+    width: 33.33333333%;
+  }
+  .app-container .iv-col-md-3 {
+    width: 25%;
+  }
+  .app-container .iv-col-md-2 {
+    width: 16.66666667%;
+  }
+  .app-container .iv-col-md-1 {
+    width: 8.33333333%;
+  }
+  .app-container .iv-col-md-pull-12 {
+    right: 100%;
+  }
+  .app-container .iv-col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .app-container .iv-col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .app-container .iv-col-md-pull-9 {
+    right: 75%;
+  }
+  .app-container .iv-col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .app-container .iv-col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .app-container .iv-col-md-pull-6 {
+    right: 50%;
+  }
+  .app-container .iv-col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .app-container .iv-col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .app-container .iv-col-md-pull-3 {
+    right: 25%;
+  }
+  .app-container .iv-col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .app-container .iv-col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .app-container .iv-col-md-pull-0 {
+    right: auto;
+  }
+  .app-container .iv-col-md-push-12 {
+    left: 100%;
+  }
+  .app-container .iv-col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .app-container .iv-col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .app-container .iv-col-md-push-9 {
+    left: 75%;
+  }
+  .app-container .iv-col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .app-container .iv-col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .app-container .iv-col-md-push-6 {
+    left: 50%;
+  }
+  .app-container .iv-col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .app-container .iv-col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .app-container .iv-col-md-push-3 {
+    left: 25%;
+  }
+  .app-container .iv-col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .app-container .iv-col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .app-container .iv-col-md-push-0 {
+    left: auto;
+  }
+  .app-container .iv-col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .app-container .iv-col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .app-container .iv-col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .app-container .iv-col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .app-container .iv-col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .app-container .iv-col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .app-container .iv-col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .app-container .iv-col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .app-container .iv-col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .app-container .iv-col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .app-container .iv-col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .app-container .iv-col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .app-container .iv-col-md-offset-0 {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .app-container .iv-col-lg-1,
+  .app-container .iv-col-lg-2,
+  .app-container .iv-col-lg-3,
+  .app-container .iv-col-lg-4,
+  .app-container .iv-col-lg-5,
+  .app-container .iv-col-lg-6,
+  .app-container .iv-col-lg-7,
+  .app-container .iv-col-lg-8,
+  .app-container .iv-col-lg-9,
+  .app-container .iv-col-lg-10,
+  .app-container .iv-col-lg-11,
+  .app-container .iv-col-lg-12 {
+    float: left;
+  }
+  .app-container .iv-col-lg-12 {
+    width: 100%;
+  }
+  .app-container .iv-col-lg-11 {
+    width: 91.66666667%;
+  }
+  .app-container .iv-col-lg-10 {
+    width: 83.33333333%;
+  }
+  .app-container .iv-col-lg-9 {
+    width: 75%;
+  }
+  .app-container .iv-col-lg-8 {
+    width: 66.66666667%;
+  }
+  .app-container .iv-col-lg-7 {
+    width: 58.33333333%;
+  }
+  .app-container .iv-col-lg-6 {
+    width: 50%;
+  }
+  .app-container .iv-col-lg-5 {
+    width: 41.66666667%;
+  }
+  .app-container .iv-col-lg-4 {
+    width: 33.33333333%;
+  }
+  .app-container .iv-col-lg-3 {
+    width: 25%;
+  }
+  .app-container .iv-col-lg-2 {
+    width: 16.66666667%;
+  }
+  .app-container .iv-col-lg-1 {
+    width: 8.33333333%;
+  }
+  .app-container .iv-col-lg-pull-12 {
+    right: 100%;
+  }
+  .app-container .iv-col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .app-container .iv-col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .app-container .iv-col-lg-pull-9 {
+    right: 75%;
+  }
+  .app-container .iv-col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .app-container .iv-col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .app-container .iv-col-lg-pull-6 {
+    right: 50%;
+  }
+  .app-container .iv-col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .app-container .iv-col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .app-container .iv-col-lg-pull-3 {
+    right: 25%;
+  }
+  .app-container .iv-col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .app-container .iv-col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .app-container .iv-col-lg-pull-0 {
+    right: auto;
+  }
+  .app-container .iv-col-lg-push-12 {
+    left: 100%;
+  }
+  .app-container .iv-col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .app-container .iv-col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .app-container .iv-col-lg-push-9 {
+    left: 75%;
+  }
+  .app-container .iv-col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .app-container .iv-col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .app-container .iv-col-lg-push-6 {
+    left: 50%;
+  }
+  .app-container .iv-col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .app-container .iv-col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .app-container .iv-col-lg-push-3 {
+    left: 25%;
+  }
+  .app-container .iv-col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .app-container .iv-col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .app-container .iv-col-lg-push-0 {
+    left: auto;
+  }
+  .app-container .iv-col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .app-container .iv-col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .app-container .iv-col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .app-container .iv-col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .app-container .iv-col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .app-container .iv-col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .app-container .iv-col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .app-container .iv-col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .app-container .iv-col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .app-container .iv-col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .app-container .iv-col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .app-container .iv-col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .app-container .iv-col-lg-offset-0 {
+    margin-left: 0;
+  }
+}
+/**
+*
+* FONTS
+*
+**/
+/**
+*
+* djb_what_a_baberegular
+*
+**/
+@font-face {
+  font-family: 'FuturaStd-Bold';
+  src: url('fonts/futura/bold/FuturaStd-Bold.eot');
+  src: url('fonts/futura/bold/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/futura/bold/FuturaStd-Bold.woff') format('woff'), url('fonts/futura/bold/FuturaStd-Bold.ttf') format('truetype'), url('fonts/futura/bold/FuturaStd-Bold.svg#FuturaStd-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaStd-Medium';
+  src: url('fonts/futura/medium/FuturaStd-Medium.eot');
+  src: url('fonts/futura/medium/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/futura/medium/FuturaStd-Medium.woff') format('woff'), url('fonts/futura/medium/FuturaStd-Medium.ttf') format('truetype'), url('fonts/futura/medium/FuturaStd-Medium.svg#FuturaStd-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaStd-Book';
+  src: url('fonts/futura/book/FuturaStd-Book.eot');
+  src: url('fonts/futura/book/FuturaStd-Book.eot?#iefix') format('embedded-opentype'), url('fonts/futura/book/FuturaStd-Book.woff') format('woff'), url('fonts/futura/book/FuturaStd-Book.ttf') format('truetype'), url('fonts/futura/book/FuturaStd-Book.svg#FuturaStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaStd-BoldOblique';
+  src: url('fonts/futura/bold-oblique/FuturaStd-BoldOblique.eot');
+  src: url('fonts/futura/bold-oblique/FuturaStd-BoldOblique.eot?#iefix') format('embedded-opentype'), url('fonts/futura/bold-oblique/FuturaStd-BoldOblique.woff') format('woff'), url('fonts/futura/bold-oblique/FuturaStd-BoldOblique.ttf') format('truetype'), url('fonts/futura/bold-oblique/FuturaStd-BoldOblique.svg#FuturaStd-BoldOblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/**
+*
+* MIXIN FUNCTIONS FONTS
+*
+**/
+/**
+*
+* HELPERS
+*
+**/
+.iv-full-w {
+  width: 100%;
+}
+.iv-full-h {
+  height: 100%;
+}
+.iv-square {
+  width: 100%;
+  height: 100%;
+}
+.iv-center-block {
+  margin: 0 auto;
+  display: block;
+}
+.iv-displaytable {
+  display: table;
+}
+.iv-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.iv-overflow {
+  overflow: hidden;
+}
+.iv-pull-right {
+  float: right;
+}
+.iv-pull-left {
+  float: left;
+}
+.iv-img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*-----  End of IMPORTS  ------*/
+/*===================================
+=            APPLICATION            =
+===================================*/
+body.opened-modal {
+  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+#hi-iam-a-buddle {
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+  position: absolute;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transition: transform 0.1s ease-out;
+  -moz-transition: transform 0.1s ease-out;
+  -o-transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+#hi-iam-a-buddle.open {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-backface-visibility: hidden;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+.app-container {
+  /**
+	*
+	* COMPONENTS
+	*
+	**/
+  /**
+	*
+	* HACK DROP SHADOW
+	*
+	**/
+  /**
+	*
+	* HEADER
+	*
+	**/
+  /**
+	*
+	* SECTION WELCOME
+	*
+	**/
+  /**
+	*
+	* SECTION FACTORY
+	*
+	**/
+  /**
+	*
+	* CALL COMPONENT
+	*
+	**/
+  /**
+	*
+	* SECTION PRODUCTS
+	*
+	**/
+  /**
+	*
+	* SECTION ENVIRONMENT
+	*
+	**/
+  /**
+	*
+	* SECTION SOCIETY
+	*
+	**/
+  /**
+	*
+	* SECTION WORKFORCE FIAT
+	*
+	**/
+  /**
+	*
+	* SECTION DEALERS FIAT
+	*
+	**/
+  /**
+	*
+	* SECTION REPORT FIAT
+	*
+	**/
+  /**
+	*
+	* MODAL COMPONENT 
+	*
+	**/
+}
+.app-container .iv-btn-sustent {
+  width: 200px;
+  height: 55px;
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'FuturaStd-Bold';
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.app-container .iv-btn-sustent a {
+  font-family: 'FuturaStd-Bold';
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.app-container .iv-link-welcome {
+  color: #4ecaa8;
+  display: table;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.app-container .iv-link-welcome:hover {
+  text-decoration: none;
+}
+.app-container .iv-hidden-fixed-menu {
+  display: none;
+}
+.app-container header.iv-menu {
+  height: 86px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.app-container header.iv-menu.iv-fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: block;
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu {
+    height: auto;
+  }
+  .app-container header.iv-menu .iv-full-h {
+    height: auto;
+  }
+}
+.app-container header.iv-menu .wrap-navigation {
+  height: 86px;
+  overflow: hidden;
+  width: 100%;
+  background: #e4f1ed;
+  position: relative;
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu .wrap-navigation {
+    height: auto;
+    padding: 35px 0;
+  }
+  .app-container header.iv-menu .wrap-navigation .iv-full-h {
+    height: auto;
+  }
+}
+.app-container header.iv-menu .wrapper-nav {
+  width: 100%;
+}
+.app-container header.iv-menu .iv-wrapper-title .title {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 29px;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  -webkit-transition: color 0.15s ease, font-size 0.5s ease;
+  -moz-transition: color 0.15s ease, font-size 0.5s ease;
+  -o-transition: color 0.15s ease, font-size 0.5s ease;
+  transition: color 0.15s ease, font-size 0.5s ease;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu .iv-wrapper-title .title {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .app-container header.iv-menu .iv-wrapper-title .title {
+    color: #6e6e6e;
+  }
+}
+@media (max-width: 360px) {
+  .app-container header.iv-menu .iv-wrapper-title .title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu .iv-wrapper-title {
+    width: 100%;
+  }
+}
+.app-container header.iv-menu .iv-navigation {
+  font-family: 'FuturaStd-BoldOblique', Tahoma;
+  font-size: 13px;
+  color: #3b3b3b;
+  text-transform: uppercase;
+}
+@media (max-width: 1430px) and (min-width: 1330px) {
+  .app-container header.iv-menu .iv-navigation {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu .iv-navigation {
+    width: 100%;
+    font-size: 13.3px;
+  }
+}
+@media (max-width: 768px) {
+  .app-container header.iv-menu .iv-navigation {
+    color: #6e6e6e;
+    font-family: 'FuturaStd-Bold';
+  }
+}
+.app-container header.iv-menu .iv-navigation .iv-wrapper-navigation {
+  float: right;
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu .iv-navigation .iv-wrapper-navigation {
+    float: none;
+    width: 100%;
+  }
+}
+.app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul {
+    display: block;
+  }
+}
+.app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li {
+  display: inline-block;
+  float: none;
+  margin-left: 35px;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  -o-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li {
+    padding: 2px 5px;
+    margin: 0;
+  }
+}
+.app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li:hover {
+  color: #888888;
+  cursor: pointer;
+}
+.app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li:first-child(1) {
+  margin-left: 0px;
+}
+.app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li.first {
+  margin-left: 0px;
+}
+.app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li a {
+  font-family: 'FuturaStd-BoldOblique', Tahoma;
+  font-size: 13px;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1px;
+}
+.app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li a:hover {
+  text-decoration: none;
+  color: #888888;
+  cursor: pointer;
+}
+@media (max-width: 1430px) and (min-width: 1330px) {
+  .app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1329px) {
+  .app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li a {
+    font-size: 13.3px;
+  }
+}
+@media (max-width: 768px) {
+  .app-container header.iv-menu .iv-navigation .iv-wrapper-navigation ul li a {
+    color: #6e6e6e;
+    font-family: 'FuturaStd-Bold';
+  }
+}
+.app-container section.iv-welcome {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.app-container section.iv-welcome .iv-wrapper-bg {
+  background: #FEFEFE;
+  position: relative;
+  z-index: 100;
+}
+.app-container section.iv-welcome .iv-main-img {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  display: none;
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.29);
+  -o-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.29);
+  transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.29);
+}
+.app-container section.iv-welcome .iv-main-img.animate-it,
+.app-container section.iv-welcome .iv-main-img.beizer-main-img {
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  -o-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+  -webkit-backface-visibility: hidden;
+}
+@media (min-width: 1601px) {
+  .app-container section.iv-welcome .iv-main-img.full {
+    display: block;
+  }
+}
+@media (max-width: 1601px) and (min-width: 1151px) {
+  .app-container section.iv-welcome .iv-main-img.full-1600 {
+    display: block;
+  }
+}
+@media (max-width: 1150px) and (min-width: 931px) {
+  .app-container section.iv-welcome .iv-main-img.full-1150 {
+    display: block;
+  }
+}
+@media (max-width: 930px) and (min-width: 671px) {
+  .app-container section.iv-welcome .iv-main-img.full-930 {
+    display: block;
+  }
+}
+@media (max-width: 670px) and (min-width: 541px) {
+  .app-container section.iv-welcome .iv-main-img.full-670 {
+    display: block;
+  }
+}
+@media (max-width: 540px) and (min-width: 451px) {
+  .app-container section.iv-welcome .iv-main-img.full-540 {
+    display: block;
+  }
+}
+@media (max-width: 450px) and (min-width: 408px) {
+  .app-container section.iv-welcome .iv-main-img.full-450 {
+    display: block;
+  }
+}
+@media (max-width: 407px) and (min-width: 371px) {
+  .app-container section.iv-welcome .iv-main-img.full-407 {
+    display: block;
+  }
+}
+@media (max-width: 370px) and (min-width: 0px) {
+  .app-container section.iv-welcome .iv-main-img.full-370 {
+    display: block;
+  }
+}
+.app-container section.iv-welcome .iv-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  padding: 5.7% 0 0 0;
+}
+@media (max-width: 540px) {
+  .app-container section.iv-welcome .iv-content {
+    padding-top: 8%;
+  }
+}
+.app-container section.iv-welcome .iv-content .wrapper-zig {
+  margin: 0 auto;
+  width: 0px;
+  overflow: hidden;
+  -webkit-transition: width 0.32s ease 1.2s;
+  -moz-transition: width 0.32s ease 1.2s;
+  -o-transition: width 0.32s ease 1.2s;
+  transition: width 0.32s ease 1.2s;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-welcome .iv-content .wrapper-zig {
+    -webkit-transition: width 0.32s ease 1.35s;
+    -moz-transition: width 0.32s ease 1.35s;
+    -o-transition: width 0.32s ease 1.35s;
+    transition: width 0.32s ease 1.35s;
+    -webkit-backface-visibility: hidden;
+  }
+}
+.app-container section.iv-welcome .iv-content .wrapper-zig.iv-open {
+  width: 70px;
+}
+.app-container section.iv-welcome .iv-content .title-welcome {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 70px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  /*=========================================
+				=            animations bellow            =
+				=========================================*/
+  -webkit-text-shadow: 0px 0px 14px rgba(150, 150, 150, 0.6);
+  -moz-text-shadow: 0px 0px 14px rgba(150, 150, 150, 0.6);
+  text-shadow: 0px 0px 14px rgba(150, 150, 150, 0.6);
+  -webkit-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -moz-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -ms-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -o-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.3s, opacity 0.4s ease 0.3s, font-size 0.5s ease;
+  -moz-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.3s, opacity 0.4s ease 0.3s, font-size 0.5s ease;
+  -o-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.3s, opacity 0.4s ease 0.3s, font-size 0.5s ease;
+  transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.3s, opacity 0.4s ease 0.3s, font-size 0.5s ease;
+  -webkit-backface-visibility: hidden;
+  /*======================================
+				=            end animations            =
+				======================================*/
+}
+@media (max-width: 1600px) {
+  .app-container section.iv-welcome .iv-content .title-welcome {
+    font-size: 50px;
+  }
+}
+@media (max-width: 670px) {
+  .app-container section.iv-welcome .iv-content .title-welcome {
+    font-size: 38px;
+  }
+}
+@media (max-width: 540px) {
+  .app-container section.iv-welcome .iv-content .title-welcome {
+    font-size: 30px;
+    padding-top: 8%;
+    padding-bottom: 4%;
+  }
+}
+@media (max-width: 360px) {
+  .app-container section.iv-welcome .iv-content .title-welcome {
+    font-size: 26px;
+  }
+}
+.app-container section.iv-welcome .iv-content .title-welcome.animate-it {
+  -webkit-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -moz-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -ms-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -o-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+.app-container section.iv-welcome .iv-content .call {
+  font-family: 'FuturaStd-Medium', Tahoma;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 190%;
+  padding-bottom: 2.35%;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -moz-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -ms-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -o-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.5s, opacity 0.4s ease 0.5s, width 0.5s ease;
+  -moz-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.5s, opacity 0.4s ease 0.5s, width 0.5s ease;
+  -o-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.5s, opacity 0.4s ease 0.5s, width 0.5s ease;
+  transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.5s, opacity 0.4s ease 0.5s, width 0.5s ease;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 540px) {
+  .app-container section.iv-welcome .iv-content .call {
+    padding-bottom: 4%;
+  }
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-welcome .iv-content .call {
+    -webkit-transition: transform 0.4s ease-out 0.5s, opacity 0.4s ease 0.5s, width 0.5s ease;
+    -moz-transition: transform 0.4s ease-out 0.5s, opacity 0.4s ease 0.5s, width 0.5s ease;
+    -o-transition: transform 0.4s ease-out 0.5s, opacity 0.4s ease 0.5s, width 0.5s ease;
+    transition: transform 0.4s ease-out 0.5s, opacity 0.4s ease 0.5s, width 0.5s ease;
+    -webkit-backface-visibility: hidden;
+  }
+}
+.app-container section.iv-welcome .iv-content .call.animate-it {
+  -webkit-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -moz-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -ms-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -o-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+@media (max-width: 1150px) {
+  .app-container section.iv-welcome .iv-content .call {
+    width: 90%;
+  }
+}
+@media (max-width: 920px) {
+  .app-container section.iv-welcome .iv-content .call {
+    width: 500px;
+  }
+}
+@media (max-width: 670px) {
+  .app-container section.iv-welcome .iv-content .call {
+    width: 410px;
+  }
+}
+@media (max-width: 540px) {
+  .app-container section.iv-welcome .iv-content .call {
+    width: 90%;
+  }
+}
+@media (max-width: 355px) {
+  .app-container section.iv-welcome .iv-content .call {
+    font-size: 14px;
+  }
+}
+@media (max-width: 355px) {
+  .app-container section.iv-welcome .iv-content .call {
+    font-size: 14px;
+  }
+}
+.app-container section.iv-welcome .iv-content .btn-welcome {
+  background: #ffffff;
+  -webkit-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -moz-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -ms-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -o-transform: translate(0, 300%) scale(0) rotateX(300deg);
+  transform: translate(0, 300%) scale(0) rotateX(300deg);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.7s, opacity 0.4s ease 0.7s, background 0.3s ease;
+  -moz-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.7s, opacity 0.4s ease 0.7s, background 0.3s ease;
+  -o-transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.7s, opacity 0.4s ease 0.7s, background 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.11, 0.69, 0.25, 1.22) 0.7s, opacity 0.4s ease 0.7s, background 0.3s ease;
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-welcome .iv-content .btn-welcome:hover {
+  background: #e6e6e6;
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-welcome .iv-content .btn-welcome {
+    -webkit-transition: transform 0.4s ease-out 0.7s, opacity 0.4s ease 0.7s, background 0.3s ease;
+    -moz-transition: transform 0.4s ease-out 0.7s, opacity 0.4s ease 0.7s, background 0.3s ease;
+    -o-transition: transform 0.4s ease-out 0.7s, opacity 0.4s ease 0.7s, background 0.3s ease;
+    transition: transform 0.4s ease-out 0.7s, opacity 0.4s ease 0.7s, background 0.3s ease;
+    -webkit-backface-visibility: hidden;
+  }
+}
+.app-container section.iv-welcome .iv-content .btn-welcome.animate-it {
+  -webkit-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -moz-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -ms-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -o-transform: translate(0, 0%) scale(1) rotateX(0deg);
+  transform: translate(0, 0%) scale(1) rotateX(0deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+.app-container section.iv-factory {
+  padding-top: 6%;
+  background: #FEFEFE;
+}
+.app-container section.iv-factory .iv-call {
+  font-family: 'FuturaStd-Medium', Tahoma;
+  font-size: 15px;
+  color: #7f7f7f;
+  line-height: 190%;
+  text-align: center;
+  width: 515px;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .app-container section.iv-factory .iv-call {
+    width: 90%;
+  }
+}
+.app-container section.iv-factory .iv-wrap-factory {
+  position: relative;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-img-factory {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .app-container section.iv-factory .iv-wrap-factory .iv-img-factory.min {
+    display: block;
+  }
+}
+@media (min-width: 769px) {
+  .app-container section.iv-factory .iv-wrap-factory .iv-img-factory.min {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .app-container section.iv-factory .iv-wrap-factory .iv-img-factory.max {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .app-container section.iv-factory .iv-wrap-factory .iv-img-factory.max {
+    display: block;
+  }
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-point {
+  position: absolute;
+  width: 3%;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(.17,.67,.31,3.2);
+  -moz-transition: transform 0.2s cubic-bezier(.17,.67,.31,3.2);
+  -o-transition: transform 0.2s cubic-bezier(.17,.67,.31,3.2);
+  transition: transform 0.2s cubic-bezier(.17,.67,.31,3.2);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-point:hover {
+  cursor: pointer;
+  -webkit-opacity: 0.88;
+  -moz-opacity: 0.88;
+  -ms-opacity: 0.88;
+  -o-opacity: 0.88;
+  opacity: 0.88;
+}
+@media (min-width: 1025px) {
+  .app-container section.iv-factory .iv-wrap-factory .iv-point {
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+@media (min-width: 1025px) {
+  .app-container section.iv-factory .iv-wrap-factory .iv-point.open-point {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-backface-visibility: hidden;
+  }
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-factory .iv-wrap-factory .iv-point {
+    width: 3.7%;
+  }
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-1 {
+  top: 21%;
+  left: 65.8%;
+  -webkit-transition-delay: 0.8s;
+  -o-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-2 {
+  top: 80%;
+  left: 81%;
+  -webkit-transition-delay: 0.9s;
+  -o-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-3 {
+  top: 49%;
+  left: 61%;
+  -webkit-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-4 {
+  top: 38%;
+  left: 55%;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-5 {
+  top: 28%;
+  left: 45.5%;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-6 {
+  top: 46%;
+  left: 42.5%;
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-7 {
+  top: 34%;
+  left: 34%;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-8 {
+  top: 50%;
+  left: 28%;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.app-container section.iv-factory .iv-wrap-factory .iv-iv-point-9 {
+  top: 25%;
+  left: 29%;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+@media (max-width: 768px) {
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-1 {
+    top: 23%;
+    left: 66.8%;
+  }
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-2 {
+    top: 80%;
+    left: 91%;
+  }
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-3 {
+    top: 52%;
+    left: 60%;
+  }
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-4 {
+    top: 38%;
+    left: 55%;
+  }
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-5 {
+    top: 31%;
+    left: 37.5%;
+  }
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-6 {
+    top: 46%;
+    left: 33.5%;
+  }
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-7 {
+    top: 34%;
+    left: 20%;
+  }
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-8 {
+    top: 52%;
+    left: 11%;
+  }
+  .app-container section.iv-factory .iv-wrap-factory .iv-iv-point-9 {
+    top: 25%;
+    left: 14%;
+  }
+}
+.app-container section.iv-factory .iv-wrapper-zig {
+  display: table;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.app-container .iv-component-call {
+  position: relative;
+  z-index: 1000;
+  padding-top: 1.5%;
+}
+@media (max-width: 1500px) {
+  .app-container .iv-component-call {
+    padding-top: 3%;
+  }
+}
+.app-container .iv-component-call h3 {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 40px;
+  color: #da6e8d;
+  text-align: center;
+  text-transform: uppercase;
+}
+.app-container .iv-component-call h3.iv-society {
+  color: #fff;
+}
+.app-container .iv-component-call h3.iv-dealers {
+  color: #ad84df;
+}
+.app-container .iv-component-call h3.iv-report {
+  text-align: left;
+  margin-left: 0px;
+}
+@media (max-width: 991px) {
+  .app-container .iv-component-call h3.iv-report {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .app-container .iv-component-call h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .app-container .iv-component-call h3 {
+    font-size: 25px;
+  }
+}
+.app-container .iv-component-call h4 {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 27px;
+  color: #da6e8d;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .app-container .iv-component-call h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .app-container .iv-component-call h4 {
+    font-size: 20px;
+  }
+}
+.app-container .iv-component-call h4.purple {
+  color: #926be2;
+}
+.app-container .iv-component-call h4.green {
+  color: #79bf61;
+}
+.app-container .iv-component-call h4.orange {
+  color: #e0775c;
+}
+.app-container .iv-component-call h4.light-blue {
+  color: #57a9c1;
+}
+.app-container .iv-component-call h4.iv-report {
+  text-align: left;
+  margin-left: 0px;
+}
+@media (max-width: 991px) {
+  .app-container .iv-component-call h4.iv-report {
+    text-align: center;
+  }
+}
+.app-container .iv-component-call p {
+  font-family: 'FuturaStd-Medium', Tahoma;
+  font-size: 13.5px;
+  color: #7f7f7f;
+  text-align: center;
+  line-height: 190%;
+  width: 515px;
+  display: block;
+  margin: 2% auto 2% auto;
+}
+.app-container .iv-component-call p.iv-society {
+  color: #fff;
+}
+.app-container .iv-component-call p.iv-dealers {
+  color: #7f7f7f;
+}
+.app-container .iv-component-call p.iv-report {
+  text-align: left;
+  margin-left: 0px;
+}
+@media (max-width: 991px) {
+  .app-container .iv-component-call p.iv-report {
+    text-align: center;
+    margin: 4% auto 4% auto !important;
+  }
+}
+@media (max-width: 991px) {
+  .app-container .iv-component-call p {
+    margin: 4% auto 4% auto;
+  }
+}
+@media (max-width: 640px) {
+  .app-container .iv-component-call p {
+    width: 90%;
+    margin: 5.3% auto 5.3% auto;
+  }
+}
+.app-container .iv-component-call .iv-btn-call {
+  width: 200px;
+  height: 45px;
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'FuturaStd-Bold';
+  font-size: 13.3px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 190%;
+}
+.app-container .iv-component-call .iv-btn-call.purple {
+  background: #926be2;
+  color: #fff;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  -webkit-backface-visibility: hidden;
+}
+.app-container .iv-component-call .iv-btn-call.purple:hover {
+  background: #855adf;
+}
+.app-container .iv-component-call .iv-btn-call.green {
+  background: #79bf61;
+  color: #fff;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  -webkit-backface-visibility: hidden;
+}
+.app-container .iv-component-call .iv-btn-call.green:hover {
+  background: #6db952;
+}
+.app-container .iv-component-call .iv-btn-call.orange {
+  background: #e0775c;
+  color: #fff;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  -webkit-backface-visibility: hidden;
+}
+.app-container .iv-component-call .iv-btn-call.orange:hover {
+  background: #dd694b;
+}
+.app-container .iv-component-call .iv-btn-call.light-blue {
+  background: #57a9c1;
+  color: #fff;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  -webkit-backface-visibility: hidden;
+}
+.app-container .iv-component-call .iv-btn-call.light-blue:hover {
+  background: #48a1bc;
+}
+.app-container .iv-component-call .iv-wrapper-zig {
+  display: table;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.app-container section.iv-products {
+  padding-top: 5%;
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+  background: #e8e8e9;
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-products {
+    padding-top: 10%;
+    padding-bottom: 8%;
+  }
+}
+.app-container section.iv-products .iv-hack-padding-title {
+  padding-top: 8%;
+}
+.app-container section.iv-products .iv-hack-padding-products {
+  padding-top: 18%;
+  position: relative;
+  z-index: 500;
+}
+.app-container section.iv-products .iv-hack-padding-products .iv-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.app-container section.iv-products .iv-hack-padding-products img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+.app-container section.iv-products .iv-hack-padding-products img.eficiencia-energetica {
+  margin-top: -14%;
+}
+.app-container section.iv-products .iv-hack-padding-products img.materiais-verdes {
+  margin-top: -14%;
+}
+.app-container section.iv-products .iv-hack-padding-products img.carros-conceito {
+  margin-top: -14%;
+}
+@media (max-width: 1500px) {
+  .app-container section.iv-products .iv-hack-padding-products {
+    padding-top: 0px;
+  }
+  .app-container section.iv-products .iv-hack-padding-products .iv-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+  }
+  .app-container section.iv-products .iv-hack-padding-products img {
+    display: block;
+    width: 70%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+  .app-container section.iv-products .iv-hack-padding-products img.eficiencia-energetica {
+    margin-top: -5%;
+  }
+  .app-container section.iv-products .iv-hack-padding-products img.materiais-verdes {
+    margin-top: -5%;
+  }
+  .app-container section.iv-products .iv-hack-padding-products img.carros-conceito {
+    margin-top: -5%;
+  }
+}
+@media (max-width: 720px) {
+  .app-container section.iv-products .iv-hack-padding-products img {
+    display: block;
+    width: 85%;
+    padding-top: 20px;
+  }
+  .app-container section.iv-products .iv-hack-padding-products img.eficiencia-energetica {
+    margin-top: 0px;
+  }
+  .app-container section.iv-products .iv-hack-padding-products img.materiais-verdes {
+    margin-top: 0px;
+  }
+  .app-container section.iv-products .iv-hack-padding-products img.carros-conceito {
+    margin-top: 0px;
+  }
+}
+.app-container section.iv-environment {
+  padding-top: 5%;
+  padding-bottom: 8%;
+  background: #e8e8e9;
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-environment {
+    padding-top: 8%;
+    padding-bottom: 13%;
+  }
+}
+.app-container section.iv-environment .iv-hack-padding-title {
+  padding-top: 8%;
+}
+.app-container section.iv-environment .iv-hack-padding-products {
+  padding-top: 18%;
+  position: relative;
+  z-index: 500;
+}
+.app-container section.iv-environment .iv-hack-padding-products .iv-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.app-container section.iv-environment .iv-hack-padding-products img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+.app-container section.iv-environment .iv-hack-padding-products img.gestao-ambiental {
+  margin-top: -14%;
+}
+.app-container section.iv-environment .iv-hack-padding-products img.recirculo-agua {
+  margin-top: -14%;
+}
+.app-container section.iv-environment .iv-hack-padding-products img.atero-zero {
+  margin-top: -11%;
+}
+@media (max-width: 1410px) {
+  .app-container section.iv-environment .iv-hack-padding-products {
+    padding-top: 0px;
+  }
+  .app-container section.iv-environment .iv-hack-padding-products .iv-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+  }
+  .app-container section.iv-environment .iv-hack-padding-products img {
+    display: block;
+    width: 70%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+  .app-container section.iv-environment .iv-hack-padding-products img.gestao-ambiental {
+    margin-top: -5%;
+  }
+  .app-container section.iv-environment .iv-hack-padding-products img.recirculo-agua {
+    margin-top: -5%;
+  }
+  .app-container section.iv-environment .iv-hack-padding-products img.atero-zero {
+    margin-top: -5%;
+  }
+}
+@media (max-width: 720px) {
+  .app-container section.iv-environment .iv-hack-padding-products img {
+    display: block;
+    width: 85%;
+    padding-top: 20px;
+  }
+  .app-container section.iv-environment .iv-hack-padding-products img.gestao-ambiental {
+    margin-top: 0px;
+  }
+  .app-container section.iv-environment .iv-hack-padding-products img.recirculo-agua {
+    margin-top: 0px;
+  }
+  .app-container section.iv-environment .iv-hack-padding-products img.atero-zero {
+    margin-top: 0px;
+  }
+}
+.app-container section.iv-society {
+  background: #4dcaa6;
+  padding-top: 5%;
+  padding-bottom: 6%;
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-society {
+    padding-top: 8%;
+    padding-bottom: 11%;
+  }
+}
+.app-container section.iv-society .iv-line {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.app-container section.iv-society .iv-item {
+  width: calc(15.66666667%);
+  padding-bottom: 2%;
+  padding-top: 2%;
+  display: inline-block;
+}
+.app-container section.iv-society .iv-item:hover {
+  cursor: pointer;
+}
+.app-container section.iv-society .iv-item:hover img {
+  -webkit-transform: scale(0.92);
+  -moz-transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  -o-transform: scale(0.92);
+  transform: scale(0.92);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-society .iv-item:hover h4 {
+  color: #e6e6e6;
+}
+@media (max-width: 991px) {
+  .app-container section.iv-society .iv-item {
+    width: calc(32.33333333%);
+  }
+}
+@media (max-width: 440px) {
+  .app-container section.iv-society .iv-item {
+    width: calc(49%);
+  }
+}
+.app-container section.iv-society .iv-item img {
+  padding-bottom: 15px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -moz-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -o-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-society .iv-item h4 {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 17.5px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 135%;
+  text-transform: uppercase;
+  -webkit-transition: color 0.17s ease;
+  -moz-transition: color 0.17s ease;
+  -o-transition: color 0.17s ease;
+  transition: color 0.17s ease;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 720px) {
+  .app-container section.iv-society .iv-item h4 {
+    font-size: 15px;
+  }
+}
+.app-container section.iv-workforce {
+  background: #ad84df;
+  padding-top: 5%;
+  padding-bottom: 6%;
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-workforce {
+    padding-top: 8%;
+    padding-bottom: 11%;
+  }
+}
+.app-container section.iv-workforce .iv-line {
+  width: 100%;
+  text-align: center;
+  font-size: 0px;
+  padding-top: 4%;
+  position: relative;
+}
+.app-container section.iv-workforce .iv-item {
+  width: calc(25%);
+  padding-bottom: 2%;
+  padding-top: 2%;
+  display: inline-block;
+}
+.app-container section.iv-workforce .iv-item:hover {
+  cursor: pointer;
+}
+.app-container section.iv-workforce .iv-item:hover img {
+  -webkit-transform: scale(0.92);
+  -moz-transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  -o-transform: scale(0.92);
+  transform: scale(0.92);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-workforce .iv-item:hover h4 {
+  color: #e6e6e6;
+}
+@media (max-width: 550px) {
+  .app-container section.iv-workforce .iv-item {
+    width: calc(50%);
+  }
+}
+.app-container section.iv-workforce .iv-item img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -moz-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -o-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-workforce .iv-item h4 {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 17.5px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 135%;
+  text-transform: uppercase;
+  -webkit-transition: color 0.17s ease;
+  -moz-transition: color 0.17s ease;
+  -o-transition: color 0.17s ease;
+  transition: color 0.17s ease;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 720px) {
+  .app-container section.iv-workforce .iv-item h4 {
+    font-size: 15px;
+  }
+}
+.app-container section.iv-dealers {
+  background: #e7e7e7;
+  padding-top: 5%;
+  padding-bottom: 6%;
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-dealers {
+    padding-top: 8%;
+    padding-bottom: 11%;
+  }
+}
+.app-container section.iv-dealers .iv-line {
+  width: 100%;
+  text-align: center;
+  font-size: 0px;
+  position: relative;
+}
+.app-container section.iv-dealers .iv-item {
+  width: calc(25%);
+  padding-bottom: 2%;
+  padding-top: 2%;
+  display: inline-block;
+}
+.app-container section.iv-dealers .iv-item:hover {
+  cursor: pointer;
+}
+.app-container section.iv-dealers .iv-item:hover img {
+  -webkit-transform: scale(0.92);
+  -moz-transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  -o-transform: scale(0.92);
+  transform: scale(0.92);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-dealers .iv-item:hover h4 {
+  color: #925cd4;
+}
+@media (max-width: 768px) {
+  .app-container section.iv-dealers .iv-item {
+    width: calc(33.33333333%);
+  }
+}
+@media (max-width: 440px) {
+  .app-container section.iv-dealers .iv-item {
+    width: calc(50%);
+  }
+}
+.app-container section.iv-dealers .iv-item img {
+  padding-bottom: 15px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -moz-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -o-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-dealers .iv-item h4 {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 17.5px;
+  color: #ad84df;
+  text-align: center;
+  line-height: 135%;
+  text-transform: uppercase;
+  -webkit-transition: color 0.17s ease;
+  -moz-transition: color 0.17s ease;
+  -o-transition: color 0.17s ease;
+  transition: color 0.17s ease;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 720px) {
+  .app-container section.iv-dealers .iv-item h4 {
+    font-size: 15px;
+  }
+}
+.app-container section.iv-report {
+  overflow: hidden;
+  background: #fff;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  /*============================================
+		=            CUSTOM REPORT SELECT            =
+		============================================*/
+}
+@media (max-width: 1024px) {
+  .app-container section.iv-report {
+    padding-top: 11%;
+    padding-bottom: 11%;
+  }
+}
+.app-container section.iv-report .iv-line {
+  width: 100%;
+  text-align: center;
+  font-size: 0px;
+  position: relative;
+}
+.app-container section.iv-report .iv-item {
+  width: calc(25%);
+  padding-bottom: 2%;
+  padding-top: 2%;
+  display: inline-block;
+}
+.app-container section.iv-report .iv-item:hover {
+  cursor: pointer;
+}
+.app-container section.iv-report .iv-item:hover img {
+  -webkit-transform: scale(0.92);
+  -moz-transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  -o-transform: scale(0.92);
+  transform: scale(0.92);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-report .iv-item:hover h4 {
+  color: #925cd4;
+}
+@media (max-width: 768px) {
+  .app-container section.iv-report .iv-item {
+    width: calc(33.33333333%);
+  }
+}
+@media (max-width: 440px) {
+  .app-container section.iv-report .iv-item {
+    width: calc(50%);
+  }
+}
+.app-container section.iv-report .iv-item img {
+  padding-bottom: 15px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -moz-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -o-transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  transition: transform 0.4s cubic-bezier(.17,.67,.01,2.7);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-report .iv-item h4 {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 17.5px;
+  color: #ad84df;
+  text-align: center;
+  line-height: 135%;
+  text-transform: uppercase;
+  -webkit-transition: color 0.17s ease;
+  -moz-transition: color 0.17s ease;
+  -o-transition: color 0.17s ease;
+  transition: color 0.17s ease;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 720px) {
+  .app-container section.iv-report .iv-item h4 {
+    font-size: 15px;
+  }
+}
+.app-container section.iv-report form {
+  position: relative;
+  width: 80%;
+  height: 80px;
+  float: right;
+}
+@media (max-width: 991px) {
+  .app-container section.iv-report form {
+    float: none !important;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+  }
+}
+@media (max-width: 640px) {
+  .app-container section.iv-report form {
+    width: 100%;
+  }
+}
+.app-container section.iv-report form .iv-download-btn {
+  float: right !important;
+  color: #fff;
+  background-color: #ad84df;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-report form .iv-download-btn:hover {
+  background: #925cd4;
+}
+@media (max-width: 991px) {
+  .app-container section.iv-report form .iv-download-btn {
+    float: none !important;
+    margin: 0 auto;
+    display: block;
+  }
+}
+.app-container section.iv-report .mySelectBoxClass {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 80;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 20px;
+  width: 100% !important;
+}
+.app-container section.iv-report .customSelect {
+  /* This is the default class that is used */
+  /* Put whatever custom styles you want here */
+  position: relative !important;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  border: 3px solid #dddee4;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  display: table !important;
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 18px;
+  color: #dddee4;
+  -webkit-transition: border 0.3s ease;
+  -moz-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 991px) {
+  .app-container section.iv-report .customSelect {
+    height: 80px;
+  }
+}
+.app-container section.iv-report .customSelect span {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-report .customSelect.customSelectHover {
+  /* Styles for when the select box is hovered */
+  border: 5px solid #ad84df;
+  -webkit-transition: border 0.2s ease;
+  -moz-transition: border 0.2s ease;
+  -o-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-report .customSelect.customSelectHover span {
+  color: #ad84df;
+}
+.app-container section.iv-report .customSelect.customSelectOpen {
+  /* Styles for when the select box is open */
+}
+.app-container section.iv-report .customSelect.customSelectFocus {
+  /* Styles for when the select box is in focus */
+}
+.app-container section.iv-report .customSelectInner {
+  /* You can style the inner box too */
+}
+.app-container section.iv-component-modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 5000;
+  background: rgba(255, 255, 255, 0.5);
+}
+.app-container section.iv-component-modal.iv-opened {
+  display: block;
+}
+.app-container section.iv-component-modal .iv-wrap-modal {
+  width: 790px;
+  height: 100%;
+  float: right;
+  position: relative;
+  z-index: 50;
+  -webkit-transform: translate(0%, 0);
+  -moz-transform: translate(0%, 0);
+  -ms-transform: translate(0%, 0);
+  -o-transform: translate(0%, 0);
+  transform: translate(0%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.64, -0.67, 0.83, 0.5);
+  -moz-transition: transform 0.5s cubic-bezier(0.64, -0.67, 0.83, 0.5);
+  -o-transition: transform 0.5s cubic-bezier(0.64, -0.67, 0.83, 0.5);
+  transition: transform 0.5s cubic-bezier(0.64, -0.67, 0.83, 0.5);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-component-modal .iv-wrap-modal.closiiiiing {
+  -webkit-transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -o-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  -webkit-backface-visibility: hidden;
+}
+@media (max-width: 889px) {
+  .app-container section.iv-component-modal .iv-wrap-modal {
+    width: 100%;
+  }
+}
+.app-container section.iv-component-modal .iv-modal {
+  -webkit-perspective: 550px;
+  -moz-perspective: 550px;
+  -ms-perspective: 550px;
+  -o-perspective: 550px;
+  perspective: 550px;
+  /*======================================
+			=            PATTERN COLORS            =
+			======================================*/
+  /**
+			*
+			* produtos
+			*
+			**/
+  /**
+			*
+			* meio ambiente
+			*
+			**/
+  /**
+			*
+			* sociedade
+			*
+			**/
+  /**
+			*
+			* CONCESSIONÁRIAS
+			*
+			**/
+  /**
+			*
+			* publico interno
+			*
+			**/
+  /**
+			*
+			* fabrica
+			*
+			**/
+  /*-----  End of COLOR PATTERNS  ------*/
+}
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .pespective-partial {
+  background: #1fb69f;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-content-modal .materiais-verdes {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-content-modal .materiais-verdes h5,
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-content-modal .materiais-verdes h6,
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-content-modal .materiais-verdes ol,
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-content-modal .materiais-verdes ul,
+.app-container section.iv-component-modal .iv-modal.iv-materiais-verdes .iv-wrap-content-modal .materiais-verdes p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .pespective-partial {
+  background: #926be2;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-content-modal .eficiencia-energetica {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-content-modal .eficiencia-energetica h5,
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-content-modal .eficiencia-energetica h6,
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-content-modal .eficiencia-energetica ol,
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-content-modal .eficiencia-energetica ul,
+.app-container section.iv-component-modal .iv-modal.iv-eficiencia-energetica .iv-wrap-content-modal .eficiencia-energetica p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .pespective-partial {
+  background: #e0775c;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-content-modal .marcos-de-inovacao {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-content-modal .marcos-de-inovacao h5,
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-content-modal .marcos-de-inovacao h6,
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-content-modal .marcos-de-inovacao ol,
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-content-modal .marcos-de-inovacao ul,
+.app-container section.iv-component-modal .iv-modal.iv-marcos-de-inovacao .iv-wrap-content-modal .marcos-de-inovacao p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .pespective-partial {
+  background: #e0775c;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-content-modal .iso-eficiencia-energetica {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-content-modal .iso-eficiencia-energetica h5,
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-content-modal .iso-eficiencia-energetica h6,
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-content-modal .iso-eficiencia-energetica ol,
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-content-modal .iso-eficiencia-energetica ul,
+.app-container section.iv-component-modal .iv-modal.iv-iso-eficiencia-energetica .iv-wrap-content-modal .iso-eficiencia-energetica p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .pespective-partial {
+  background: #8861d5;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-content-modal .aterro-zero {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-content-modal .aterro-zero h5,
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-content-modal .aterro-zero h6,
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-content-modal .aterro-zero ol,
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-content-modal .aterro-zero ul,
+.app-container section.iv-component-modal .iv-modal.iv-aterro-zero .iv-wrap-content-modal .aterro-zero p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .pespective-partial {
+  background: #57a9c1;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-content-modal .recirculo-de-agua {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-content-modal .recirculo-de-agua h5,
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-content-modal .recirculo-de-agua h6,
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-content-modal .recirculo-de-agua ol,
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-content-modal .recirculo-de-agua ul,
+.app-container section.iv-component-modal .iv-modal.iv-recirculo-de-agua .iv-wrap-content-modal .recirculo-de-agua p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .pespective-partial {
+  background: #79bf61;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-content-modal .iso-gestao-ambiental {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-content-modal .iso-gestao-ambiental h5,
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-content-modal .iso-gestao-ambiental h6,
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-content-modal .iso-gestao-ambiental ol,
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-content-modal .iso-gestao-ambiental ul,
+.app-container section.iv-component-modal .iv-modal.iv-gestao-ambiental .iv-wrap-content-modal .iso-gestao-ambiental p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .pespective-partial {
+  background: #fff;
+  color: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .pespective-partial .iv-close-btn .left {
+  background: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-content-modal .cidades-sustentaveis {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-content-modal .cidades-sustentaveis h5,
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-content-modal .cidades-sustentaveis h6,
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-content-modal .cidades-sustentaveis ol,
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-content-modal .cidades-sustentaveis ul,
+.app-container section.iv-component-modal .iv-modal.iv-cidades-sustentaveis .iv-wrap-content-modal .cidades-sustentaveis p {
+  color: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .pespective-partial {
+  background: #fff;
+  color: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .pespective-partial .iv-close-btn .left {
+  background: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-content-modal .fiat-fun {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-content-modal .fiat-fun h5,
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-content-modal .fiat-fun h6,
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-content-modal .fiat-fun ol,
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-content-modal .fiat-fun ul,
+.app-container section.iv-component-modal .iv-modal.iv-fiat-fun .iv-wrap-content-modal .fiat-fun p {
+  color: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .pespective-partial {
+  background: #fff;
+  color: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .pespective-partial .iv-close-btn .left {
+  background: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-content-modal .mobilidade-urbana {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-content-modal .mobilidade-urbana h5,
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-content-modal .mobilidade-urbana h6,
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-content-modal .mobilidade-urbana ol,
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-content-modal .mobilidade-urbana ul,
+.app-container section.iv-component-modal .iv-modal.iv-mobilidade-urbana .iv-wrap-content-modal .mobilidade-urbana p {
+  color: #32b58f !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .pespective-partial {
+  background: #fff;
+  color: #e58527 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .pespective-partial .iv-close-btn .left {
+  background: #e58527 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-content-modal .vacilancia {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-content-modal .vacilancia h5,
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-content-modal .vacilancia h6,
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-content-modal .vacilancia ol,
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-content-modal .vacilancia ul,
+.app-container section.iv-component-modal .iv-modal.iv-vacilancia .iv-wrap-content-modal .vacilancia p {
+  color: #e58527 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .pespective-partial {
+  background: #fff;
+  color: #9c68dc !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .pespective-partial .iv-close-btn .left {
+  background: #9c68dc !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-content-modal .casa-fiat-cultura {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-content-modal .casa-fiat-cultura h5,
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-content-modal .casa-fiat-cultura h6,
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-content-modal .casa-fiat-cultura ol,
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-content-modal .casa-fiat-cultura ul,
+.app-container section.iv-component-modal .iv-modal.iv-casa-fiat-cultura .iv-wrap-content-modal .casa-fiat-cultura p {
+  color: #9c68dc !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .pespective-partial {
+  background: #fff;
+  color: #f45e65 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .pespective-partial .iv-close-btn .left {
+  background: #f45e65 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-content-modal .arvore-da-vida {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-content-modal .arvore-da-vida h5,
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-content-modal .arvore-da-vida h6,
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-content-modal .arvore-da-vida ol,
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-content-modal .arvore-da-vida ul,
+.app-container section.iv-component-modal .iv-modal.iv-arvore-da-vida .iv-wrap-content-modal .arvore-da-vida p {
+  color: #f45e65 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-governanca .pespective-partial {
+  background: #fff;
+  color: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-governanca .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-governanca .pespective-partial .iv-close-btn .left {
+  background: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-content-modal .governanca {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-content-modal .governanca h5,
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-content-modal .governanca h6,
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-content-modal .governanca ol,
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-content-modal .governanca ul,
+.app-container section.iv-component-modal .iv-modal.iv-governanca .iv-wrap-content-modal .governanca p {
+  color: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .pespective-partial {
+  background: #fff;
+  color: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .pespective-partial .iv-close-btn .left {
+  background: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-content-modal .boas-praticas {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-content-modal .boas-praticas h5,
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-content-modal .boas-praticas h6,
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-content-modal .boas-praticas ol,
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-content-modal .boas-praticas ul,
+.app-container section.iv-component-modal .iv-modal.iv-boas-praticas .iv-wrap-content-modal .boas-praticas p {
+  color: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-premio .pespective-partial {
+  background: #fff;
+  color: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-premio .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-premio .pespective-partial .iv-close-btn .left {
+  background: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-content-modal .premio {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-content-modal .premio h5,
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-content-modal .premio h6,
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-content-modal .premio ol,
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-content-modal .premio ul,
+.app-container section.iv-component-modal .iv-modal.iv-premio .iv-wrap-content-modal .premio p {
+  color: #ad84df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .pespective-partial {
+  background: #fff;
+  color: #ee549b !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .pespective-partial .iv-close-btn .left {
+  background: #f45e65 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .iv-wrap-content-modal .saude-seguranca {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .iv-wrap-content-modal .saude-seguranca h5,
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .iv-wrap-content-modal .saude-seguranca ol,
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .iv-wrap-content-modal .saude-seguranca ul,
+.app-container section.iv-component-modal .iv-modal.iv-saude-seguranca .iv-wrap-content-modal .saude-seguranca p {
+  color: #ee549b !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .pespective-partial {
+  background: #fff;
+  color: #3ea6df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .pespective-partial .iv-close-btn .left {
+  background: #3ea6df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .iv-wrap-content-modal .bem-estar-qualidade {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .iv-wrap-content-modal .bem-estar-qualidade h5,
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .iv-wrap-content-modal .bem-estar-qualidade ol,
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .iv-wrap-content-modal .bem-estar-qualidade ul,
+.app-container section.iv-component-modal .iv-modal.iv-bem-estar-qualidade .iv-wrap-content-modal .bem-estar-qualidade p {
+  color: #3ea6df !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .pespective-partial {
+  background: #fff;
+  color: #f18f21 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .pespective-partial .iv-close-btn .left {
+  background: #f18f21 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .iv-wrap-content-modal .esporte-e-lazer {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .iv-wrap-content-modal .esporte-e-lazer h5,
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .iv-wrap-content-modal .esporte-e-lazer ol,
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .iv-wrap-content-modal .esporte-e-lazer ul,
+.app-container section.iv-component-modal .iv-modal.iv-esporte-e-lazer .iv-wrap-content-modal .esporte-e-lazer p {
+  color: #f18f21 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .pespective-partial {
+  background: #fff;
+  color: #10bba6 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .pespective-partial .iv-close-btn .left {
+  background: #10bba6 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .iv-wrap-content-modal .educacao-e-cultura {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .iv-wrap-content-modal .educacao-e-cultura h5,
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .iv-wrap-content-modal .educacao-e-cultura ol,
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .iv-wrap-content-modal .educacao-e-cultura ul,
+.app-container section.iv-component-modal .iv-modal.iv-educacao-e-cultura .iv-wrap-content-modal .educacao-e-cultura p {
+  color: #10bba6 !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .iv-wrap-content-modal .point-1 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .iv-wrap-content-modal .point-1 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .iv-wrap-content-modal .point-1 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .iv-wrap-content-modal .point-1 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-1 .iv-wrap-content-modal .point-1 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .iv-wrap-content-modal .point-2 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .iv-wrap-content-modal .point-2 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .iv-wrap-content-modal .point-2 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .iv-wrap-content-modal .point-2 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-2 .iv-wrap-content-modal .point-2 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .iv-wrap-content-modal .point-3 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .iv-wrap-content-modal .point-3 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .iv-wrap-content-modal .point-3 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .iv-wrap-content-modal .point-3 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-3 .iv-wrap-content-modal .point-3 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .iv-wrap-content-modal .point-4 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .iv-wrap-content-modal .point-4 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .iv-wrap-content-modal .point-4 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .iv-wrap-content-modal .point-4 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-4 .iv-wrap-content-modal .point-4 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .iv-wrap-content-modal .point-5 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .iv-wrap-content-modal .point-5 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .iv-wrap-content-modal .point-5 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .iv-wrap-content-modal .point-5 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-5 .iv-wrap-content-modal .point-5 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .iv-wrap-content-modal .point-6 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .iv-wrap-content-modal .point-6 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .iv-wrap-content-modal .point-6 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .iv-wrap-content-modal .point-6 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-6 .iv-wrap-content-modal .point-6 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .iv-wrap-content-modal .point-7 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .iv-wrap-content-modal .point-7 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .iv-wrap-content-modal .point-7 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .iv-wrap-content-modal .point-7 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-7 .iv-wrap-content-modal .point-7 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .iv-wrap-content-modal .point-8 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .iv-wrap-content-modal .point-8 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .iv-wrap-content-modal .point-8 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .iv-wrap-content-modal .point-8 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-8 .iv-wrap-content-modal .point-8 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .iv-wrap-close-modal,
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .pespective-partial {
+  background: #E7698F;
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .iv-wrap-close-modal .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .pespective-partial .iv-close-btn .right,
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .pespective-partial .iv-close-btn .left {
+  background: #fff !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .iv-wrap-content-modal .point-9 {
+  display: block !important;
+}
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .iv-wrap-content-modal .point-9 h5,
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .iv-wrap-content-modal .point-9 ol,
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .iv-wrap-content-modal .point-9 ul,
+.app-container section.iv-component-modal .iv-modal.iv-point-9 .iv-wrap-content-modal .point-9 p {
+  color: #fff;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  z-index: 100;
+  width: 100px;
+  overflow: hidden;
+  transform-style: perserve-3d;
+  -webkit-transform: perspective(100px) rotateY(-105deg);
+  -moz-transform: perspective(100px) rotateY(-105deg);
+  -ms-transform: perspective(100px) rotateY(-105deg);
+  -o-transform: perspective(100px) rotateY(-105deg);
+  transform: perspective(100px) rotateY(-105deg);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transform-origin: 100% 0 0;
+  -moz-transform-origin: 100% 0 0;
+  -o-transform-origin: 100% 0 0;
+  transform-origin: 100% 0 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.25s ease, opacity ease 0.1s;
+  -moz-transition: -moz-transform 0.25s ease, opacity ease 0.1s;
+  -o-transition: -moz-transform 0.25s ease, opacity ease 0.1s;
+  transition: transform 0.25s ease, opacity ease 0.1s;
+}
+@media (max-width: 889px) {
+  .app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal {
+    left: auto;
+    right: 0px;
+  }
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal .iv-close-btn {
+  width: 100px;
+  height: 100px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.17, 0.67, 0.01, 3), box-shadow 0.3s cubic-bezier(0.17, 0.67, 0.01, 3);
+  -moz-transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.01, 3), box-shadow 0.3s cubic-bezier(0.17, 0.67, 0.01, 3);
+  -o-transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.01, 3), box-shadow 0.3s cubic-bezier(0.17, 0.67, 0.01, 3);
+  transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.01, 3), box-shadow 0.3s cubic-bezier(0.17, 0.67, 0.01, 3);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal .iv-close-btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal .iv-close-btn:hover img {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal .iv-close-btn img {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal .iv-close-btn .left,
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal .iv-close-btn .right {
+  width: 50%;
+  height: 3px;
+  display: block;
+  background: #fff;
+  position: absolute;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal .iv-close-btn .left {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-backface-visibility: hidden;
+  top: 50px;
+  left: 50%;
+  margin-left: -25px;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal .iv-close-btn .right {
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  -webkit-backface-visibility: hidden;
+  top: 50px;
+  left: 50%;
+  margin-left: -25px;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-close-modal.open {
+  -webkit-transform: perspective(100px) rotateY(0deg);
+  -ms-transform: perspective(100px) rotateY(0deg);
+  -o-transform: perspective(100px) rotateY(0deg);
+  transform: perspective(100px) rotateY(0deg);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+.app-container section.iv-component-modal .iv-modal .pespective-partial {
+  width: 135%;
+  height: calc(25.15%);
+  position: absolute;
+  left: 0px;
+  z-index: 50;
+  transform-style: perserve-3d;
+  -webkit-transform: perspective(350px) rotateX(-105deg);
+  -moz-transform: perspective(350px) rotateX(-105deg);
+  -ms-transform: perspective(350px) rotateX(-105deg);
+  -o-transform: perspective(350px) rotateX(-105deg);
+  transform: perspective(350px) rotateX(-105deg);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transform-origin: 100% 0 0;
+  -moz-transform-origin: 100% 0 0;
+  -o-transform-origin: 100% 0 0;
+  transform-origin: 100% 0 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.25s ease, opacity ease 0.1s;
+  -moz-transition: -moz-transform 0.25s ease, opacity ease 0.1s;
+  -o-transition: -moz-transform 0.25s ease, opacity ease 0.1s;
+  transition: transform 0.25s ease, opacity ease 0.1s;
+}
+@media (max-width: 768px) {
+  .app-container section.iv-component-modal .iv-modal .pespective-partial {
+    height: calc(25.1%);
+  }
+}
+.app-container section.iv-component-modal .iv-modal .pespective-partial.open {
+  -webkit-transform: perspective(350px) rotateX(0deg);
+  -ms-transform: perspective(350px) rotateX(0deg);
+  -o-transform: perspective(350px) rotateX(0deg);
+  transform: perspective(350px) rotateX(0deg);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+.app-container section.iv-component-modal .iv-modal .pespective-partial:nth-child(2) {
+  top: 0%;
+}
+.app-container section.iv-component-modal .iv-modal .pespective-partial:nth-child(3) {
+  -webkit-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+  top: 24.9%;
+}
+.app-container section.iv-component-modal .iv-modal .pespective-partial:nth-child(4) {
+  -webkit-transition-delay: 0.50s;
+  -o-transition-delay: 0.50s;
+  transition-delay: 0.50s;
+  top: 49.9%;
+}
+.app-container section.iv-component-modal .iv-modal .pespective-partial:nth-child(5) {
+  -webkit-transition-delay: 0.75s;
+  -o-transition-delay: 0.75s;
+  transition-delay: 0.75s;
+  top: 74.9%;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  position: relative;
+  z-index: 100;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal {
+  width: 100%;
+  height: calc(100%);
+  -webkit-perspective: 550px;
+  -moz-perspective: 550px;
+  -ms-perspective: 550px;
+  -o-perspective: 550px;
+  perspective: 550px;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal .iv-to-scroll {
+  width: 80%;
+  height: calc(100% - 50px);
+  margin: 0 auto;
+  padding-top: 3px;
+  padding-right: 30px;
+  overflow-y: auto;
+  -webkit-transform: translate(0, -30%);
+  -moz-transform: translate(0, -30%);
+  -ms-transform: translate(0, -30%);
+  -o-transform: translate(0, -30%);
+  transform: translate(0, -30%);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.48s ease-out 0.9s, opacity 0.48s ease-out 0.9s;
+  -moz-transition: transform 0.48s ease-out 0.9s, opacity 0.48s ease-out 0.9s;
+  -o-transition: transform 0.48s ease-out 0.9s, opacity 0.48s ease-out 0.9s;
+  transition: transform 0.48s ease-out 0.9s, opacity 0.48s ease-out 0.9s;
+  -webkit-backface-visibility: hidden;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal .iv-to-scroll.open {
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  -o-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+  -webkit-backface-visibility: hidden;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal .iv-to-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal .iv-to-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal .iv-to-scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal .iv-to-scroll .iv-show-hide {
+  display: none;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal h5 {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 120%;
+  margin: 0 0 15px 0;
+  padding: 0px;
+}
+@media (max-width: 768px) {
+  .app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal h5 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal h5 {
+    font-size: 28px;
+  }
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal h6 {
+  font-family: 'FuturaStd-Bold', Tahoma;
+  font-size: 16.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 120%;
+  margin: 45px 0 15px 0;
+  padding: 0px;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal p {
+  font-family: 'FuturaStd-Book', Tahoma;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 170%;
+  margin: 20px 0;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ol {
+  list-style: none;
+  padding: 40px 0;
+  margin: 0px;
+  overflow: hidden;
+  font-family: 'FuturaStd-Medium', Tahoma;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 170%;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ol li {
+  font-family: 'FuturaStd-Medium', Tahoma;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 170%;
+  margin-bottom: 15px;
+  width: 100%;
+  float: left;
+  display: table;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ol li:last-child {
+  margin-bottom: 0px;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ol li span {
+  display: inline-block;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ol li .icon {
+  width: 15%;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ol li .icon img {
+  width: 80%;
+  display: block;
+  margin: 10px 0;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ol li .text {
+  width: 85%;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal .iv-main-img {
+  margin: 20px auto 10px auto;
+  max-width: 80%;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ul {
+  color: pink;
+  padding-left: 20px;
+  font-family: 'FuturaStd-Medium', Tahoma;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 170%;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ul li {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.app-container section.iv-component-modal .iv-modal .iv-wrap-content-modal ul li:last-child {
+  margin-bottom: 0px;
+}
+.app-container .iv-force-be-with-us {
+  -webkit-filter: blur(0px);
+  -o-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.app-container .iv-force-be-with-us.blur {
+  -webkit-filter: blur(4px);
+  -o-filter: blur(4px);
+  filter: blur(4px);
+}
+/*-----  End of APPLICATION  ------*/
+/*# sourceMappingURL=assets/css/main.css.map */
